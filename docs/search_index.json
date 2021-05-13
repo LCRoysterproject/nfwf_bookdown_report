@@ -1,5 +1,1 @@
-[
-["index.html", "YOUR TITLE HERE Chapter 1 Down the rabbit-hole", " YOUR TITLE HERE YOUR NAME HERE 2020-08-10 Chapter 1 Down the rabbit-hole "],
-["the-pool-of-tears.html", "Chapter 2 The pool of tears", " Chapter 2 The pool of tears "],
-["a-caucus-race-and-a-long-tale.html", "Chapter 3 A caucus-race and a long tale", " Chapter 3 A caucus-race and a long tale "]
-]
+[["quarterly-windrose.html", "Chapter 7 Quarterly Windrose", " Chapter 7 Quarterly Windrose Figure 7-1. A wind rose visualizes the frequency of winds blowing from a specific direction of a desired Date Range. The data used for this figure were collected via the rnoaa R Package at station CDRF1 (Cedar Key, Florida). The legend represents the wind speed ranging from low (2-4 m/s) to high (18-20 m/s) wind speeds. The cardinal directions on the outer part of the wind rose indicate the direction of the wind. The Frequency is displayed as the lowest to highest percentage frequency of a wind speed occuring in a given direction, by the size of the wind magnitude polygon. Wind data are updated periodically through USGS (monthly basis).A) Windrose from December 1, 2020 to December 31, 2020, B) Windrose from Janauary 1, 2021 to January 31, 2021, C) Windrose from February 1, 2021 to February 28, 2021. "]]
