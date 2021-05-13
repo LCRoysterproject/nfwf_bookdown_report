@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Oyster Landings Figures  
   
 This data set is manually updated by the oyster landings data located here: https://public.myfwc.com/FWRI/PFDM/ReportCreator.aspx.  The Commercial Fisheries Landings Summaries allows the user to select the date year range and oysters (as the Species).  
@@ -12,7 +17,6 @@ The State of Florida data are all of the counties, and this is selected in the F
 ```{r landings_options setup, include=FALSE, warning=FALSE, message=FALSE, comment=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library("cowplot")
-library("devtools")
 library("ggplot2")
 library("ggpubr")
 library("grid")
