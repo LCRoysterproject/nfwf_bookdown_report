@@ -29,6 +29,9 @@ library("tidyverse")
 ```
   
 ```{r ,include=FALSE, warning=FALSE, message=FALSE, comment=FALSE}
+startYear = 1986
+endYear = as.numeric(format(Sys.Date(), "%Y"))
+
 
 ### Reading in the csv
 county_landings<- read.csv("data/oys_landings/ReportCreatorResults-County.csv", header= T, skip = 9)
@@ -106,7 +109,7 @@ all_landings$value<- factor(all_landings$value,levels=c ("Landings (lbs)", "Tota
   labs(color= "Area") +
   scale_linetype_manual(values = c('solid','dotted', 'longdash')) + 
   scale_color_manual(values= c("#0072B2", "#D55E00", "#CC79A7")) +
-  scale_x_continuous (breaks= c(1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014,2015, 2016, 2017,2018, 2019, 2020, 2021), labels= c(1986, "", 1988, "", 1990, "", 1992, "", 1994, "", 1996, "", 1998, "", 2000, "", 2002, "", 2004, "", 2006, "", 2008, "", 2010, "", 2012, "", 2014,"", 2016, "",2018, "", 2020, 2021)) +
+  scale_x_continuous (breaks= c(startYear:endYear), labels= seq(from = startYear, to = endYear, by = 1)) +
   scale_y_continuous(labels = function(x) format(x, scientific = FALSE)) +
   theme(legend.position = "top",
     axis.text.x = element_text(angle=90, hjust = 0.5), 
@@ -120,7 +123,7 @@ all_landings$value<- factor(all_landings$value,levels=c ("Landings (lbs)", "Tota
   facet_wrap(~value , scales="free_y", ncol= 1) 
 ```
   
-**Figure 6-1.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange), and the State of Florida (pink) for years 1986 to 2021.  
+**Figure 6-1.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange), and the State of Florida (pink) for years `r startYear` to `r endYear`.  
   
 ```{r echo=FALSE, fig.width= 7, fig.height= 8}
 all_landings %>% 
@@ -134,7 +137,7 @@ ggplot(aes(x= as.numeric(Year), y= as.numeric(measurement))) +
   labs(color= "Area") +
   scale_linetype_manual(values = c('solid','dotted', 'longdash')) + 
   scale_color_manual(values= c("#0072B2", "#D55E00", "#CC79A7")) +
-  scale_x_continuous (breaks= c(2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021)) +
+  scale_x_continuous (breaks= c(2012:endYear)) +
   scale_y_continuous(labels = function(x) format(x, scientific = FALSE)) +
   theme(legend.position = "top",
         axis.text.x = element_text(angle=90, hjust = 0), 
@@ -149,7 +152,7 @@ ggplot(aes(x= as.numeric(Year), y= as.numeric(measurement))) +
 
 ```
   
-**Figure 6-2.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange) for years 2012 to 2021.  
+**Figure 6-2.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange) for years 2012 to `r endYear`.  
   
   
 ```{r, echo=FALSE, fig.width= 7, fig.height= 8}
@@ -165,7 +168,7 @@ all_landings %>%
   scale_linetype_manual(values = c('solid','dotted', 'longdash')) + 
   scale_y_continuous(labels = function(x) format(x, scientific = FALSE)) +
   scale_color_manual(values= c("#0072B2", "#D55E00", "#CC79A7")) +
-  scale_x_continuous (breaks= c(2015, 2016, 2017, 2018, 2019, 2020, 2021)) +
+  scale_x_continuous (breaks= c(2015:endYear)) +
   #xlim(2015,2020) +
   theme(legend.position = "top",
         axis.text.x = element_text(angle=90, hjust = 1), 
@@ -180,5 +183,5 @@ all_landings %>%
 
 ```
   
-**Figure 6-3.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange) for years 2015 to 2021.  
+**Figure 6-3.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange) for years 2015 to `r endYear`.  
   

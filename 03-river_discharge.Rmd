@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # River Discharge Figures    
   
 A percentile is a value on a scale of one hundred that indicates the percent of a distribution that is equal to or below it. For example, on the map of daily streamflow conditions a river discharge at the 90th percentile is equal to or greater than 90 percent of the discharge values recorded on this day of the year during all years that measurements have been made. In general,a percentile greater than 75 is considered above normal, a percentile between 25 and 75 is considered normal, and a percentile less than 25 is considered below normal.  
@@ -81,7 +86,11 @@ cbPalette <- c("mediumpurple3", "darkslategray2", "palegreen2", "sandybrown", "i
 
 plot_list = list()
 
-for (i in 1:72) { # Loop over loop.vector
+#pull out the current year
+cy <- format(Sys.Date(), "%Y")
+end <- as.numeric(cy)-1949
+
+for (i in 1:end) { # Loop over loop.vector
   
   # Year of interest, keep this at the current year
   yoi = i + 1949
@@ -120,7 +129,9 @@ ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 5, nrow = 15)
 
 plot_list = list()
 
-for (i in 1:17) { # Loop over loop.vector
+end2 <- as.numeric(cy) - 2004
+
+for (i in 1:end2) { # Loop over loop.vector
   
   # Year of interest, keep this at the current year
   yoi = i + 2004
@@ -194,8 +205,9 @@ ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 4)
 ```{r, echo= FALSE, warning=FALSE, message=FALSE, comment=FALSE, fig.height=12, fig.width= 10}
 
 plot_list = list()
+end3 <- as.numeric(cy)-2012
 
-for (i in 1:9) { # Loop over loop.vector
+for (i in 1:end3) { # Loop over loop.vector
   
   # Year of interest, keep this at the current year
   yoi = i + 2012

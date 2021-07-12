@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # River Discharge Heatmaps  
   
 Suwannee River discharge is known to influence salinity in Suwannee Sound (Orlando et al. 1993) and lags between Suwannee River discharge and oyster counts have been observed (Moore et al. 2020). River discharge is essentially a second "treatment" in this restoration project (after the rebuilding of the reef) because it is the freshwater from the Suwannee River that Lone Cabbage Reef is thought to detain thus possibly promoting lower salinity. River discharge patterns in the Suwanee River basin may be changing over decadal scales due to changing climate, as is hypothesized for large rivers in the Gulf of Mexico (Neupane et al. 2019). For the period of record for the USGS Wilcox gauge (02323500) which begins in October 1930, we created a "heat map" that demonstrates for each month and year the deviation in river discharge (as a percentage) from the period of record average.  
@@ -26,11 +31,8 @@ dis   = importDVs(staid=station,code='00060',stat='00003', sdate= "1922-07-01")
 dis$year    = as.numeric(strftime(dis$dates,format="%Y"))
 dis$month   = as.numeric(strftime(dis$dates,format="%m")) 
 
-#dataset starts on 1922-07-01
-#ends on 2020-10-04
-
-#make dataset from epochs restrict from October 1957 to October 2020
-disE  = dis[dis$dates>='1922-07-01' & dis$dates<='2021-01-01',] 
+#subset for correct dates
+disE  = dis[dis$dates>='1922-07-01' & dis$dates<='2021-07-01',] 
 
 #get monthly sum, mean, sd, and var
 #discharge

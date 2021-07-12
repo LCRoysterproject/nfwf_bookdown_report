@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Water Quality Quarterly Figures  
 
 ```{r wq_options, include=FALSE, warning=FALSE, message=FALSE, comment=FALSE}
@@ -9,13 +14,16 @@ library("scales")
 ```
   
 ```{r salinity_data_processing, include=FALSE, warning=FALSE, message= FALSE}
+# Start and end dates for all figures
+startDate <- ymd_hms("2021-04-01 00:00:00")
+endDate <- ymd_hms("2021-06-30 23:00:00")
 
 # Sensor water quality carpentry
 wq <- read.csv("data/wq/wq.csv", header= T) %>%
   filter(Site != 0) 
 
 wq<-wq %>% 
-  filter(Obs_Date > "2021-01-01 00:00:00" & Obs_Date < "2021-03-31 23:00:00")
+  filter(Obs_Date > startDate & Obs_Date < endDate)
 
 wq$year <- strftime(wq$Obs_Date, format = "%Y")
 
@@ -124,9 +132,6 @@ if (max(dis$dates) < (Sys.Date() - 5)) {
   write_rds(dis, "data/dis.rds")
 }
 
-# Start and end dates for all figures
-startDate <- ymd_hms("2021-01-01 00:00:00")
-endDate <- ymd_hms("2021-03-31 23:00:00")
 
 dis2 <- dis %>%
   mutate(Datetime = paste(dates, " 12:00:00") %>% ymd_hms()) %>%
