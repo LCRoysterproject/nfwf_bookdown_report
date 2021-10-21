@@ -11,7 +11,7 @@ The Suwannee counties used in these figures are TAYLOR, DIXIE, and LEVY.
 The Apalachicola counties used iin these figures are FRANKLIN and WAKULLA.  
   
   
-The State of Florida data are all of the counties, and this is selected in the FWC Commercial Fisheries Landings Summaries website.  
+The State of Florida data are all of the counties in Florida where oysters are landed, and this is selected in the FWC Commercial Fisheries Landings Summaries website.  
 
 
 ```{r landings_options setup, include=FALSE, warning=FALSE, message=FALSE, comment=FALSE}

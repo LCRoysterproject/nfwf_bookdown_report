@@ -5,9 +5,8 @@ output:
 ---
 # River Discharge Figures    
   
-A percentile is a value on a scale of one hundred that indicates the percent of a distribution that is equal to or below it. For example, on the map of daily streamflow conditions a river discharge at the 90th percentile is equal to or greater than 90 percent of the discharge values recorded on this day of the year during all years that measurements have been made. In general,a percentile greater than 75 is considered above normal, a percentile between 25 and 75 is considered normal, and a percentile less than 25 is considered below normal.  
-  
-  
+For all of the figures within this chapter, the areas of color represent percentiles where each percentile is a value on a scale of one hundred that indicates the percent of a distribution that is equal to or below it. For example, on the map of daily streamflow conditions a river discharge at the 90th percentile is equal to or greater than 90 percent of the discharge values recorded on this day of the year during all years that measurements have been made. In general, a percentile greater than 75 is considered above normal, a percentile between 25 and 75 is considered normal, and a percentile less than 25 is considered below normal. The percentiles are based on the period of record for this gauge station.
+
 These data are retrieved via the `waterData` package in R made available by U.S. Geological Survey (USGS). These data are collected at the USGS 02323500 Suwannee River station near Wilcox, Florida. This site is located in Levy County, Florida (latitude 29.58968 and longitude -82.93651 in degrees).  
 
 ```{r rd_options setup, include=FALSE, warning=FALSE, message=FALSE, comment=FALSE}
@@ -82,7 +81,7 @@ cbPalette <- c("mediumpurple3", "darkslategray2", "palegreen2", "sandybrown", "i
 
 
 
-```{r, echo= FALSE, warning=FALSE, message=FALSE, comment=FALSE, fig.height= 30, fig.width= 20}
+```{r, echo= FALSE, warning=FALSE, message=FALSE, comment=FALSE, fig.height= 25, fig.width= 20}
 
 plot_list = list()
 
@@ -121,20 +120,20 @@ ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 5, nrow = 15)
 
 ```
 
-**Figure 3-1.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2005-2021 (solid black line). The areas of color represent percentiles where each percentile is a value on a scale of one hundred that indicates the percent of a distribution that is equal to or below it. For example, on the map of daily streamflow conditions a river discharge at the 90th percentile is equal to or greater than 90 percent of the discharge values recorded on this day of the year during all years that measurements have been made. In general, a percentile greater than 75 is considered above normal, a percentile between 25 and 75 is considered normal, and a percentile less than 25 is considered below normal. The percentiles are based on the period of record for this gauge station.
+**Figure 3-1.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2005-2021 (solid black line). 
 
 
 
-```{r, echo= FALSE, warning=FALSE, message=FALSE, comment=FALSE, fig.height=20, fig.width= 10}
+```{r, echo= FALSE, warning=FALSE, message=FALSE, comment=FALSE, fig.height=12, fig.width= 10}
 
 plot_list = list()
 
-end2 <- as.numeric(cy) - 2004
+end2 <- as.numeric(cy) - 2009
 
 for (i in 1:end2) { # Loop over loop.vector
   
   # Year of interest, keep this at the current year
-  yoi = i + 2004
+  yoi = i + 2009
   
   # Add year to dis_quant's date for plotting purpose
   dis_quant2 <- dis_quant1 %>%
@@ -158,21 +157,23 @@ for (i in 1:end2) { # Loop over loop.vector
   
 }
 
-ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 9)
+ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 6)
 ```
 
-**Figure 3-2.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2005-2021 (solid black line). The areas of color represent percentiles where each percentile is a value on a scale of one hundred that indicates the percent of a distribution that is equal to or below it. For example, on the map of daily streamflow conditions a river discharge at the 90th percentile is equal to or greater than 90 percent of the discharge values recorded on this day of the year during all years that measurements have been made. In general, a percentile greater than 75 is considered above normal, a percentile between 25 and 75 is considered normal, and a percentile less than 25 is considered below normal. The percentiles are based on the period of record for this gauge station.
+**Figure 3-2.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2010-2021 (solid black line).
 
 
 
-```{r, echo= FALSE, warning=FALSE, message=FALSE, comment=FALSE, fig.height=20, fig.width= 15}
+```{r, echo= FALSE, warning=FALSE, message=FALSE, comment=FALSE, fig.height=12, fig.width= 10}
 
 plot_list = list()
 
-for (i in 1:8) { # Loop over loop.vector
+end3 <- 2012 - 2006
+
+for (i in 1:end3) { # Loop over loop.vector
   
   # Year of interest, keep this at the current year
-  yoi = i + 2004
+  yoi = i + 2006
   
   # Add year to dis_quant's date for plotting purpose
   dis_quant2 <- dis_quant1 %>%
@@ -196,18 +197,19 @@ for (i in 1:8) { # Loop over loop.vector
   
 }
 
-ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 4)
+ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 3)
 ```
 
-**Figure 3-3.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2005-2012 (solid black line) representing the years preceding observed extreme low discharge conditions 2010-2012. The areas of color represent percentiles where each percentile is a value on a scale of one hundred that indicates the percent of a distribution that is equal to or below it. For example, on the map of daily streamflow conditions a river discharge at the 90th percentile is equal to or greater than 90 percent of the discharge values recorded on this day of the year during all years that measurements have been made. In general, a percentile greater than 75 is considered above normal, a percentile between 25 and 75 is considered normal, and a percentile less than 25 is considered below normal. The percentiles are based on the period of record for this gauge station.
+**Figure 3-3.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2007-2012 (solid black line) representing the years preceding observed extreme low discharge conditions 2010-2012.
+
 
 
 ```{r, echo= FALSE, warning=FALSE, message=FALSE, comment=FALSE, fig.height=12, fig.width= 10}
 
 plot_list = list()
-end3 <- as.numeric(cy)-2012
+end4 <- as.numeric(cy)-2012
 
-for (i in 1:end3) { # Loop over loop.vector
+for (i in 1:end4) { # Loop over loop.vector
   
   # Year of interest, keep this at the current year
   yoi = i + 2012
@@ -237,4 +239,4 @@ for (i in 1:end3) { # Loop over loop.vector
 ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 5)
 ```
 
-**Figure 3-4.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2013-2021 (solid black line) representing the years since 2010-2012 low flow conditions including the initiation of the Lone Cabbage Reef restoration project.  The areas of color represent percentiles where each percentile is a value on a scale of one hundred that indicates the percent of a distribution that is equal to or below it. For example, on the map of daily streamflow conditions a river discharge at the 90th percentile is equal to or greater than 90 percent of the discharge values recorded on this day of the year during all years that measurements have been made. In general, a percentile greater than 75 is considered above normal, a percentile between 25 and 75 is considered normal, and a percentile less than 25 is considered below normal. The percentiles are based on the period of record for this gauge station.
+**Figure 3-4.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2013-2021 (solid black line) representing the years since 2010-2012 low flow conditions including the initiation of the Lone Cabbage Reef restoration project.  
