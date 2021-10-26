@@ -10,8 +10,9 @@ This data set is manually updated by the oyster landings data located here: http
 The Suwannee counties used in these figures are TAYLOR, DIXIE, and LEVY.  
 The Apalachicola counties used iin these figures are FRANKLIN and WAKULLA.  
   
-  
 The State of Florida data are all of the counties in Florida where oysters are landed, and this is selected in the FWC Commercial Fisheries Landings Summaries website.  
+
+Data shown in the plots from the current year are considered provisional and only contain reported data up until this point in the year.
 
 
 ```{r landings_options setup, include=FALSE, warning=FALSE, message=FALSE, comment=FALSE}
@@ -123,7 +124,7 @@ all_landings$value<- factor(all_landings$value,levels=c ("Landings (lbs)", "Tota
   facet_wrap(~value , scales="free_y", ncol= 1) 
 ```
   
-**Figure 6-1.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange), and the State of Florida (pink) for years `r startYear` to `r endYear`.  
+**Figure 4-1.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange), and the State of Florida (pink) for years `r startYear` to `r endYear`.  
   
 ```{r echo=FALSE, fig.width= 7, fig.height= 8}
 all_landings %>% 
@@ -152,7 +153,7 @@ ggplot(aes(x= as.numeric(Year), y= as.numeric(measurement))) +
 
 ```
   
-**Figure 6-2.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange) for years 2012 to `r endYear`.  
+**Figure 4-2.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange) for years 2012 to `r endYear`.  
   
   
 ```{r, echo=FALSE, fig.width= 7, fig.height= 8}
@@ -183,5 +184,5 @@ all_landings %>%
 
 ```
   
-**Figure 6-3.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange) for years 2015 to `r endYear`.  
+**Figure 4-3.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange) for years 2015 to `r endYear`.  
   

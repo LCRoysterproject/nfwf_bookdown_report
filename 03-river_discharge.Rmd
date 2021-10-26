@@ -120,7 +120,7 @@ ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 5, nrow = 15)
 
 ```
 
-**Figure 3-1.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2005-2021 (solid black line). 
+**Figure 2-1.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2005-2021 (solid black line). 
 
 
 
@@ -160,7 +160,7 @@ for (i in 1:end2) { # Loop over loop.vector
 ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 6)
 ```
 
-**Figure 3-2.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2010-2021 (solid black line).
+**Figure 2-2.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2010-2021 (solid black line).
 
 
 
@@ -200,7 +200,7 @@ for (i in 1:end3) { # Loop over loop.vector
 ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 3)
 ```
 
-**Figure 3-3.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2007-2012 (solid black line) representing the years preceding observed extreme low discharge conditions 2010-2012.
+**Figure 2-3.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2007-2012 (solid black line) representing the years preceding observed extreme low discharge conditions 2010-2012.
 
 
 
@@ -239,4 +239,4 @@ for (i in 1:end4) { # Loop over loop.vector
 ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 5)
 ```
 
-**Figure 3-4.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2013-2021 (solid black line) representing the years since 2010-2012 low flow conditions including the initiation of the Lone Cabbage Reef restoration project.  
+**Figure 2-4.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2013-2021 (solid black line) representing the years since 2010-2012 low flow conditions including the initiation of the Lone Cabbage Reef restoration project.  
