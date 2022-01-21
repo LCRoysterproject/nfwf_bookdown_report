@@ -20,7 +20,7 @@ organizeData <- function(data){
   library("lubridate") #format dates
   
   #format date column as a date object
-  data$date <- mdy(data$date)
+  #data$date <- mdy(data$date)
   
   #create season column and make it a factor
   data$season <- ifelse(data$month ==1 | data$month ==2 |data$month ==3 | data$month == 10 | data$month == 11 | data$month == 12, "winter", "summer")
@@ -101,7 +101,7 @@ calculateCountsDensity <- function(data, data2) {
                    locality+site+bar+station+transect+tran_length+strata+rocks+harvest,data = data2, FUN = "mean")
   
   dta1dead=aggregate(count_dead~date+day+month+year+season+period+treatment+
-                       locality+site+bar+station+transect+tran_length+strata+rocks+harvest,data = data2, FUN = "mean")
+                   locality+site+bar+station+transect+tran_length+strata+rocks+harvest,data = data2, FUN = "mean")
   #first remove all rows with -999 
   dta2 <- dta1[dta1$count_live > -1,]
   dta2dead <- dta1dead[dta1dead$count_dead > -1,]
@@ -132,17 +132,17 @@ calculateCountsDensity <- function(data, data2) {
   }
   #remove rows with tran_length = -999
   data <- subset(data, data$tran_length > -1)
-  
+
   #find rows with -999
-  miss <- which(data$count_live < -1)
-  for(i in 1:length(miss)){
-    ind <- miss[i]
-    period <- data$period[ind]
-    station <- data$station[ind]
-    transect <- data$transect[ind]
-    #subtract 2.5 from the transect length for this particular station/transect that has a missing value
-    length$tran_length[length$station == station & length$transect == transect & length$period == period] <- length$tran_length[length$station == station & length$transect == transect & length$period == period] - 2.5
-  }
+  # miss <- which(data$count_live < -1)
+  # for(i in 1:length(miss)){
+  #   ind <- miss[i]
+  #   period <- data$period[ind]
+  #   station <- data$station[ind]
+  #   transect <- data$transect[ind]
+  #   #subtract 2.5 from the transect length for this particular station/transect that has a missing value
+  #   length$tran_length[length$station == station & length$transect == transect & length$period == period] <- length$tran_length[length$station == station & length$transect == transect & length$period == period] - 2.5
+  # }
   
   #sum over all transects
   tranlength=aggregate(tran_length~season+period+treatment+locality+site+bar+station+strata+rocks+harvest,data=length,sum)
@@ -591,7 +591,7 @@ plotsDensity <- function(data){
 pilotSites <- function(data){
   data2 <- subset(data, data$station == "LCO10B" | data$station == "LCO11A" |
                     data$station == "LCO8B" | data$station == "LCO9A")
-  
+
   
   print(ggplot(data2, aes(density, period, shape=station, colour=station))+
           geom_point(size=5, alpha=0.5)+
@@ -676,28 +676,33 @@ effortPlot<- function(data) {
 #number of completed sites as of last date in data file
 #input organized data file - not aggregated
 progress <- function(data){
-  s <- subset(data, data$period == 22)
+  s <- subset(data, data$period == 24)
   f <- function(x){length(unique(x))}
   s2 <- aggregate(tran_length ~ station + strata + transect, data = s, FUN = max)
   s3 <- aggregate(tran_length ~ strata, data = s2, FUN = 'sum')
   
-  Y_NA <- 424
-  N_NA <- 543
-  N_YA <- 1183
-  Y_YA <- 1149
+  Y_NA <- 332
+  N_NA <- 339
+  N_YA <- 1166
+  Y_YA <- 1388
   
-  Total<- 3299
+  Total<- 3225
   
-  Y_N_Bar <- (s3$tran_length[s3$strata == "Y_N"] / Y_NA) * 100
-  N_N_Bar <- (s3$tran_length[s3$strata == "N_N"] / N_NA) * 100
-  N_Y_Bar <- (s3$tran_length[s3$strata == "N_Y"] / N_YA) * 100
-  Y_Y_Bar <- (s3$tran_length[s3$strata == "Y_Y"] / Y_YA) * 100
+  ifelse(length(s3$tran_length[s3$strata == "Y_N"])>0, Y_N_done <- s3$tran_length[s3$strata == "Y_N"], Y_N_done <- 0)
+  ifelse(length(s3$tran_length[s3$strata == "N_N"])>0, N_N_done <- s3$tran_length[s3$strata == "N_N"], N_N_done <- 0)
+  ifelse(length(s3$tran_length[s3$strata == "N_Y"])>0, N_Y_done <- s3$tran_length[s3$strata == "N_Y"] + s3$tran_length[s3$strata == "N_PILOT"], N_Y_done <- 0)
+  ifelse(length(s3$tran_length[s3$strata == "Y_Y"])>0, Y_Y_done <- s3$tran_length[s3$strata == "Y_Y"], Y_Y_done <- 0)
+  
+  Y_N_Bar <- (Y_N_done / Y_NA) * 100
+  N_N_Bar <- (N_N_done / N_NA) * 100
+  N_Y_Bar <- (N_Y_done / N_YA) * 100
+  Y_Y_Bar <- (Y_Y_done / Y_YA) * 100
   
   
-  Y_N_sub_total<- min(Y_NA, s3$tran_length[s3$strata == "Y_N"])
-  N_N_sub_total<- min(N_NA, s3$tran_length[s3$strata == "N_N"])
-  Y_Y_sub_total<- min(Y_YA, s3$tran_length[s3$strata == "Y_Y"])
-  N_Y_sub_total<- min(N_YA, s3$tran_length[s3$strata == "N_Y"])
+  Y_N_sub_total<- min(Y_NA, Y_N_done)
+  N_N_sub_total<- min(N_NA, N_N_done)
+  Y_Y_sub_total<- min(Y_YA, Y_Y_done)
+  N_Y_sub_total<- min(N_YA, N_Y_done)
   
   total <- ((sum(Y_N_sub_total,N_N_sub_total, Y_Y_sub_total, N_Y_sub_total))/ Total) * 100  
   

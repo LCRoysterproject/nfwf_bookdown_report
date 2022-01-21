@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>bookdownproj.utf8</title>
+  <title>bookdownproj.knit</title>
   <meta name="description" content="<div class="line-block">National Fish and Wildlife Foundation<br />
 Gulf Environmental Benefit Fund<br />
 Quarterly Progress Report</div>" />
   <meta name="generator" content="bookdown #bookdown:version# and GitBook 2.6.7" />
 
-  <meta property="og:title" content="bookdownproj.utf8" />
+  <meta property="og:title" content="bookdownproj.knit" />
   <meta property="og:type" content="book" />
   
   
@@ -18,7 +18,7 @@ Quarterly Progress Report</div>" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="bookdownproj.utf8" />
+  <meta name="twitter:title" content="bookdownproj.knit" />
   
   
   
@@ -26,7 +26,7 @@ Quarterly Progress Report</div>" />
 <meta name="author" content="" />
 
 
-<meta name="date" content="2021-10-21" />
+<meta name="date" content="2022-01-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -35,7 +35,8 @@ Quarterly Progress Report</div>" />
   
 <!--bookdown:link_prev-->
 <!--bookdown:link_next-->
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -44,7 +45,6 @@ Quarterly Progress Report</div>" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -71,7 +71,7 @@ Quarterly Progress Report</div>" />
 <h1 class="title"><div class="line-block">National Fish and Wildlife Foundation<br />
 Gulf Environmental Benefit Fund<br />
 Quarterly Progress Report</div></h1>
-<p class="date" style="margin-top: 1.5em;"><em>2021-10-21</em></p>
+<p class="date"><em>2022-01-21</em></p>
 </div>
 <!--bookdown:title:end-->
 
@@ -85,9 +85,17 @@ Quarterly Progress Report</div></h1>
 <li><a href="#any-other-information-necessary-for-nfwfs-evaluation-of-the-projects-progress-as-measured-against-the-project-description-budget-and-project-schedule."><span class="toc-section-number">0.1</span> Any other information necessary for NFWF’s evaluation of the Project’s progress as measured against the Project Description, Budget, and Project schedule.</a></li>
 <li><a href="#water-quality-quarterly-figures"><span class="toc-section-number">1</span> Water Quality Quarterly Figures</a></li>
 <li><a href="#river-discharge-figures"><span class="toc-section-number">2</span> River Discharge Figures</a></li>
-<li><a href="#river-discharge-heatmaps"><span class="toc-section-number">3</span> River Discharge Heatmaps</a></li>
-<li><a href="#oyster-landings-figures"><span class="toc-section-number">4</span> Oyster Landings Figures</a></li>
-<li><a href="#quarterly-windrose"><span class="toc-section-number">5</span> Quarterly Windrose</a></li>
+<li><a href="#transect-report"><span class="toc-section-number">3</span> Transect Report</a><ul>
+<li><a href="#overview"><span class="toc-section-number">3.1</span> Overview</a><ul>
+<li><a href="#definition-of-localities-and-strata"><span class="toc-section-number">3.1.1</span> Definition of Localities and Strata</a></li>
+</ul></li>
+<li><a href="#current-sampling-progress"><span class="toc-section-number">3.2</span> Current Sampling (progress)</a><ul>
+<li><a href="#summary-plots-for-periods-18-20-22-and-24"><span class="toc-section-number">3.2.1</span> Summary Plots for Periods 18, 20, 22, and 24</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#river-discharge-heatmaps"><span class="toc-section-number">4</span> River Discharge Heatmaps</a></li>
+<li><a href="#oyster-landings-figures"><span class="toc-section-number">5</span> Oyster Landings Figures</a></li>
+<li><a href="#quarterly-windrose"><span class="toc-section-number">6</span> Quarterly Windrose</a></li>
 </ul>
 <!--bookdown:toc2:end-->
       </nav>
@@ -120,37 +128,175 @@ Quarterly Progress Report</div></a>
 </div>
 <div id="river-discharge-figures" class="section level1">
 <h1><span class="header-section-number">2</span> River Discharge Figures</h1>
-<p>A percentile is a value on a scale of one hundred that indicates the percent of a distribution that is equal to or below it. For example, on the map of daily streamflow conditions a river discharge at the 90th percentile is equal to or greater than 90 percent of the discharge values recorded on this day of the year during all years that measurements have been made. In general,a percentile greater than 75 is considered above normal, a percentile between 25 and 75 is considered normal, and a percentile less than 25 is considered below normal.</p>
-<p>These data are retrieved via the <code>waterData</code> package in R made available by U.S. Geological Survey (USGS). These data are collected at the USGS 02323500 Suwannee River station near Wilcox, Florida. This site is located in Levy County, Florida (latitude 29.58968 and longitude -82.93651 in degrees).</p>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-2-1.png" width="1920" /></p>
-<p><strong>Figure 3-1.</strong> River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2005-2021 (solid black line). The areas of color represent percentiles where each percentile is a value on a scale of one hundred that indicates the percent of a distribution that is equal to or below it. For example, on the map of daily streamflow conditions a river discharge at the 90th percentile is equal to or greater than 90 percent of the discharge values recorded on this day of the year during all years that measurements have been made. In general, a percentile greater than 75 is considered above normal, a percentile between 25 and 75 is considered normal, and a percentile less than 25 is considered below normal. The percentiles are based on the period of record for this gauge station.</p>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-3-1.png" width="960" /></p>
-<p><strong>Figure 3-2.</strong> River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2010-2021 (solid black line).</p>
-<pre><code>FALSE $`1`</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-4-1.png" width="1440" /></p>
-<pre><code>FALSE 
-FALSE $`2`</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-4-2.png" width="1440" /></p>
-<pre><code>FALSE 
-FALSE attr(,&quot;class&quot;)
-FALSE [1] &quot;list&quot;      &quot;ggarrange&quot;</code></pre>
-<p><strong>Figure 3-3.</strong> River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2007-2012 (solid black line) representing the years preceding observed extreme low discharge conditions 2010-2012.</p>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-5-1.png" width="960" /></p>
-<p><strong>Figure 3-4.</strong> River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2013-2021 (solid black line) representing the years since 2010-2012 low flow conditions including the initiation of the Lone Cabbage Reef restoration project.</p>
+<p>Placeholder</p>
 <!--chapter:end:03-river_discharge.Rmd-->
 </div>
+<div id="transect-report" class="section level1">
+<h1><span class="header-section-number">3</span> Transect Report</h1>
+<div id="overview" class="section level2">
+<h2><span class="header-section-number">3.1</span> Overview</h2>
+<p>This report provides summary statistics and figures for ongoing transect sampling. The first section of the report focuses on the current sampling (Winter 2021-2022) and how the collected data compare to last year’s sampling (Winter 2020-2021). So far 35 days have been sampled this season. The second half of the report gives summaries of all of the data that have been collected since the beginning of the project (5/27/2010). In total, 140 days have been sampled over this entire project.</p>
+<div id="definition-of-localities-and-strata" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Definition of Localities and Strata</h3>
+
+<table>
+<thead>
+<tr class="header">
+<th align="left">LOCALITY</th>
+<th align="right">LOCATION</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">BT</td>
+<td align="right">Big Trout</td>
+</tr>
+<tr class="even">
+<td align="left">CK</td>
+<td align="right">Cedar Key</td>
+</tr>
+<tr class="odd">
+<td align="left">CR</td>
+<td align="right">Corrigan’s Reef</td>
+</tr>
+<tr class="even">
+<td align="left">HB</td>
+<td align="right">Horseshoe Beach</td>
+</tr>
+<tr class="odd">
+<td align="left">LC</td>
+<td align="right">Lone Cabbage</td>
+</tr>
+<tr class="even">
+<td align="left">LT</td>
+<td align="right">Little Trout</td>
+</tr>
+<tr class="odd">
+<td align="left">NN</td>
+<td align="right">No Name</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr class="header">
+<th align="left">STRATA</th>
+<th align="right">DEFINITION</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Y_N</td>
+<td align="right">Yes Harvest, No Rock</td>
+</tr>
+<tr class="even">
+<td align="left">Y_Y</td>
+<td align="right">Yes Harvest, Yes Rock</td>
+</tr>
+<tr class="odd">
+<td align="left">N_N</td>
+<td align="right">No Harvest, No Rock</td>
+</tr>
+<tr class="even">
+<td align="left">N_Y</td>
+<td align="right">No Harvest, Yes Rock</td>
+</tr>
+<tr class="odd">
+<td align="left">N_PILOT</td>
+<td align="right">No Harvest, Pilot Rocks</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div id="current-sampling-progress" class="section level2">
+<h2><span class="header-section-number">3.2</span> Current Sampling (progress)</h2>
+<p>Here, we provide a progress bar showing how much of the sampling has been completed for this season, plus summary tables and plots comparing live counts and density of oysters between this current season and last year. <strong>The current sampling period is period 24, and last year’s sampling period is period 22.</strong></p>
+<p><img src="bookdownproj_files/figure-html/progress_bar-1.png" width="672" /></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">STRATA</th>
+<th align="right">Meters Completed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Y_N</td>
+<td align="right">332</td>
+</tr>
+<tr class="even">
+<td align="left">Y_Y</td>
+<td align="right">383.1</td>
+</tr>
+<tr class="odd">
+<td align="left">N_N</td>
+<td align="right">339</td>
+</tr>
+<tr class="even">
+<td align="left">N_Y</td>
+<td align="right">1006.9</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 4-1.</strong> - Displaying the total meters surveyed during period 24 per strata.</p>
+<div id="summary-plots-for-periods-18-20-22-and-24" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Summary Plots for Periods 18, 20, 22, and 24</h3>
+<p><img src="bookdownproj_files/figure-html/2022_local-1.png" width="672" /></p>
+<p><strong>Figure 4-1.</strong>- Calculated live oyster density by locality for periods 18 (Winter 2018-2019), 20 (Winter 2019-2020), 22 (Winter 2020-2021), and 24 (Winter 2021-2022) with the last sample date of period 24 as 1/6/2022.
+</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><strong>Figure 4-2.</strong>- Calculated dead oyster density by locality for periods 18 (Winter 2018-2019), 20 (Winter 2019-2020), 22 (Winter 2020-2021), and 24 (Winter 2021-2022) with the last sample date of period 24 as 1/6/2022.
+</p>
+<p><img src="bookdownproj_files/figure-html/2022_strata-1.png" width="672" /></p>
+<p><strong>Figure 4-3.</strong>- Calculated live oyster density by strata for periods 18 (Winter 2018-2019), 20 (Winter 2019-2020), 22 (Winter 2020-2021), and 24 (Winter 2021-2022) with the last sample date of period 24 as 1/6/2022.
+</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><strong>Figure 4-4.</strong>- Calculated dead oyster density by strata for periods 18 (Winter 2018-2019), 20 (Winter 2019-2020), 22 (Winter 2020-2021), and 24 (Winter 2021-2022) with the last sample date of period 24 as 1/6/2022.
+</p>
+<p>The following summary plot is calculated in R using the <code>geom_density</code> (<a href="https://ggplot2.tidyverse.org/reference/geom_density.html" class="uri">https://ggplot2.tidyverse.org/reference/geom_density.html</a>) statistical function in <code>ggplot</code>. The <code>geom_density</code> function computes and draws kernel density estimates, which is then represented as a smoothed version of a histogram.</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><strong>Figure 4-5.</strong>- Calculated live oyster density by periods 18 (Winter 2018-2019) and 20 (Winter 2019-2020) using a probability density function.
+</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><strong>Figure 4-6.</strong>- Calculated dead oyster density by periods 18 (Winter 2018-2019) and 20 (Winter 2019-2020) using a probability density function.
+</p>
+<p><img src="bookdownproj_files/figure-html/den_plot-1.png" width="672" /></p>
+<p><strong>Figure 4-7.</strong>- Calculated live oyster density by periods 20 (Winter 2019-2020) and 22 (Winter 2020-2021) using a probability density function.
+</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><strong>Figure 4-8.</strong>- Calculated dead oyster density by periods 20 (Winter 2019-2020) and 22 (Winter 2020-2021) using a probability density function.
+</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+<strong>Figure 4-9.</strong>- Calculated live oyster density by periods 22 (Winter 2020-2021) and 24 (Winter 2021-2022) using a probability density function with the last sample date of period 24 as 1/6/2022.
+</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-10-1.png" width="672" />
+<strong>Figure 4-10</strong>- Calculated dead oyster density by periods 22 (Winter 2020-2021) and 24 (Winter 2021-2022) using a probability density function with the last sample date of period 24 as 1/6/2022.
+</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><strong>Figure 4-11.</strong>- Live and dead oyster count comparison by periods 18 (Winter 2018- 2019), 20 (Winter 2019-2020), 22 (Winter 2020-2021), and 24 (Winter 2021-2022), last sample date of period 24 as 1/6/2022.</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><strong>Figure 4-12.</strong>- Live and dead oyster comparison for all periods, last sample date of period 24 is 1/6/2022.
+</p>
+<!--chapter:end:04-transect.Rmd-->
+</div>
+</div>
+</div>
 <div id="river-discharge-heatmaps" class="section level1">
-<h1><span class="header-section-number">3</span> River Discharge Heatmaps</h1>
+<h1><span class="header-section-number">4</span> River Discharge Heatmaps</h1>
 <p>Placeholder</p>
 <!--chapter:end:05-heatmaps.Rmd-->
 </div>
 <div id="oyster-landings-figures" class="section level1">
-<h1><span class="header-section-number">4</span> Oyster Landings Figures</h1>
+<h1><span class="header-section-number">5</span> Oyster Landings Figures</h1>
 <p>Placeholder</p>
 <!--chapter:end:06-landings.Rmd-->
 </div>
 <div id="quarterly-windrose" class="section level1">
-<h1><span class="header-section-number">5</span> Quarterly Windrose</h1>
+<h1><span class="header-section-number">6</span> Quarterly Windrose</h1>
 <p>Placeholder</p>
 <!--chapter:end:07-windrose.Rmd-->
 </div>

@@ -3,6 +3,7 @@ output:
   pdf_document: default
   html_document: default
 ---
+\newpage
 # River Discharge Figures    
   
 For all of the figures within this chapter, the areas of color represent percentiles where each percentile is a value on a scale of one hundred that indicates the percent of a distribution that is equal to or below it. For example, on the map of daily streamflow conditions a river discharge at the 90th percentile is equal to or greater than 90 percent of the discharge values recorded on this day of the year during all years that measurements have been made. In general, a percentile greater than 75 is considered above normal, a percentile between 25 and 75 is considered normal, and a percentile less than 25 is considered below normal. The percentiles are based on the period of record for this gauge station.
@@ -120,7 +121,7 @@ ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 5, nrow = 15)
 
 ```
 
-**Figure 2-1.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2005-2021 (solid black line). 
+**Figure 2-1.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 1950-2022 (solid black line). 
 
 
 
@@ -128,12 +129,12 @@ ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 5, nrow = 15)
 
 plot_list = list()
 
-end2 <- as.numeric(cy) - 2009
+end2 <- as.numeric(cy) - 2010
 
 for (i in 1:end2) { # Loop over loop.vector
   
   # Year of interest, keep this at the current year
-  yoi = i + 2009
+  yoi = i + 2010
   
   # Add year to dis_quant's date for plotting purpose
   dis_quant2 <- dis_quant1 %>%
@@ -160,7 +161,7 @@ for (i in 1:end2) { # Loop over loop.vector
 ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 6)
 ```
 
-**Figure 2-2.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2010-2021 (solid black line).
+**Figure 2-2.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2011-2022 (solid black line).
 
 
 
@@ -239,4 +240,4 @@ for (i in 1:end4) { # Loop over loop.vector
 ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 5)
 ```
 
-**Figure 2-4.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2013-2021 (solid black line) representing the years since 2010-2012 low flow conditions including the initiation of the Lone Cabbage Reef restoration project.  
+**Figure 2-4.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2013-2022 (solid black line) representing the years since 2010-2012 low flow conditions including the initiation of the Lone Cabbage Reef restoration project.  

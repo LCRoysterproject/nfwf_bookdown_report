@@ -3,6 +3,7 @@ output:
   pdf_document: default
   html_document: default
 ---
+\newpage
 # Oyster Landings Figures  
   
 This data set is manually updated by the oyster landings data located here: https://public.myfwc.com/FWRI/PFDM/ReportCreator.aspx.  The Commercial Fisheries Landings Summaries allows the user to select the date year range and oysters (as the Species).  
