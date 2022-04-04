@@ -42,7 +42,7 @@ The State of Florida data are all of the counties, and this is selected in the F
   
 1) Download the report above.  
   Options: Years: 1986-current
-  Species Set: Foot and Bait
+  Species Set: Food and Bait
   Species: Oyster
   Additional Output Columns: County, Pounds, Average Price, and Estimated Value
 2) Place the report in this path `data`-> `oys_landings`

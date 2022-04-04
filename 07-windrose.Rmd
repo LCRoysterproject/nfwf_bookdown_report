@@ -17,9 +17,10 @@ library("cowplot")
 #wind17 <- buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2017)
 #wind18 <- buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2018)
 #wind19 <- buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2019)
-wind20 <- buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2020)
+#wind20 <- buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2020)
 wind21 <- buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2021)
-wind <- rbind(wind20$data, wind21$data) %>% dplyr::distinct()
+wind22 <- buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2022)
+wind <- rbind(wind21$data, wind22$data) %>% dplyr::distinct()
 
 # Shrink the wind table, and convert the format of time
 wind$time <- ymd_hms(wind$time)
@@ -177,35 +178,37 @@ plot.windrose <- function(data,
 
 ```{r, include= FALSE}
 wind0 <- wind %>%
-  filter(time >= "2021-07-01 00:00:00" & time <= "2021-07-31 00:00:00") %>%
+  filter(time >= "2022-01-01 00:00:00" & time <= "2022-01-31 00:00:00") %>%
   select(time, wind_spd, wind_dir)
 
 wind1 <- wind %>%
-  filter(time >= "2021-08-01 00:00:00" & time <= "2021-08-31 00:00:00") %>%
+  filter(time >= "2022-02-01 00:00:00" & time <= "2022-02-28 00:00:00") %>%
   select(time, wind_spd, wind_dir)
 
 
-wind2 <- wind %>%
-  filter(time >= "2021-09-01 00:00:00" & time <= "2021-09-30 00:00:00") %>%
-  select(time, wind_spd, wind_dir)
+#wind2 <- wind %>%
+#  filter(time >= "2022-03-01 00:00:00" & time <= "2022-03-31 00:00:00") %>%
+#  select(time, wind_spd, wind_dir)
 
 
-july_plot<-plot.windrose(spd = wind0$wind_spd,
+wind0_plot<-plot.windrose(spd = wind0$wind_spd,
                          dir = wind0$wind_dir)
 
-aug_plot<-plot.windrose(spd = wind1$wind_spd,
+wind1_plot<-plot.windrose(spd = wind1$wind_spd,
                     dir = wind1$wind_dir)
 
-sept_plot<-plot.windrose(spd = wind2$wind_spd,
-                          dir = wind2$wind_dir)
+#wind2_plot<-plot.windrose(spd = wind2$wind_spd,
+#                          dir = wind2$wind_dir)
 ```
 
   
 ```{r, echo= FALSE, fig.height= 10, fig.width=11}
 
-plot_grid(july_plot, aug_plot, sept_plot, labels = c("A", "B", "C"), 
+plot_grid(wind0_plot, wind1_plot, labels = c("A", "B"), 
           label_size = 16)
+#plot_grid(wind0_plot, wind1_plot, wind2_plot, labels = c("A", "B", "C"), 
+#          label_size = 16)
 
 ```
-**Figure 5-1.** A wind rose visualizes the frequency of winds blowing from a specific direction of a desired Date Range. The data used for this figure were collected via the `rnoaa` R Package at station CDRF1 (Cedar Key, Florida). The legend represents the wind speed ranging from low (2-4 m/s) to high (18-20 m/s) wind speeds. The cardinal directions on the outer part of the wind rose indicate the direction of the wind. The Frequency is displayed as the lowest to highest percentage frequency of a wind speed occuring in a given direction, by the size of the wind magnitude polygon. Wind data are updated periodically through USGS (monthly basis).A) Windrose from July 1, 2021 to July 31, 2021, B) Windrose from August 1, 2021 to August 31, 2021,  C) Windrose from September 1, 2021 to September 30, 2021.
+**Figure 5-1.** A wind rose visualizes the frequency of winds blowing from a specific direction of a desired Date Range. The data used for this figure were collected via the `rnoaa` R Package at station CDRF1 (Cedar Key, Florida). The legend represents the wind speed ranging from low (2-4 m/s) to high (18-20 m/s) wind speeds. The cardinal directions on the outer part of the wind rose indicate the direction of the wind. The Frequency is displayed as the lowest to highest percentage frequency of a wind speed occuring in a given direction, by the size of the wind magnitude polygon. Wind data are updated periodically through USGS (monthly basis).A) Windrose from January 1, 2022 to January 31, 2022, B) Windrose from February 1, 2022 to February 28, 2022,  C) Windrose from March 1, 2022 to March 31, 2022.
 

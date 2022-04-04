@@ -15,12 +15,14 @@ library("scales")
   
 ```{r salinity_data_processing, include=FALSE, warning=FALSE, message= FALSE}
 # Start and end dates for all figures
-startDate <- ymd_hms("2021-10-01 00:00:00")
-endDate <- ymd_hms("2021-12-30 23:00:00")
+startDate <- ymd_hms("2022-01-01 00:00:00")
+endDate <- ymd_hms("2022-03-31 23:00:00")
 
 # Sensor water quality carpentry
 wq <- read.csv("data/wq/wq.csv", header= T) %>%
   filter(Site != 0) 
+
+wq$Obs_Date <- as.Date(wq$Obs_Date, "%m/%d/%Y")
 
 wq<-wq %>% 
   filter(Obs_Date > startDate & Obs_Date < endDate)
@@ -29,7 +31,7 @@ wq$year <- strftime(wq$Obs_Date, format = "%Y")
 
 #Remove 2017
 wq <- wq %>%
-  subset(year %in% c('2018','2019','2020', '2021')) %>%
+  subset(year %in% c('2018','2019','2020','2021','2022')) %>%
   subset(Site %in% c(1:9))
 
 #Calculate mean salinity by date and site
