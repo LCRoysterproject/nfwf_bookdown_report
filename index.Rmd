@@ -13,12 +13,12 @@ Easygrants ID:	 54029
 Project Title:	Recovery and Resilience of Oyster Reefs in the Big Bend of Florida		
 Organization:	University of Florida				
 Project Term:	12/01/2016 - 11/30/2024   
-Reporting Quarter: Ending April 2022 
+Reporting Quarter: Ending June 2022 
 
 
 ##	General statement of project status and implementation.  
 
-This report includes work accomplished from December through April 2022. We have developed a detailed draft analyses of the oyster count data from the winter 2021/2022 sampling events as an Appendix to this report.
+This report includes work accomplished from April through June 2022. We have attached an Appendix that provides a proposed sampling framework for winter 2022-2023.
 
 Implementation continues to be mostly smooth, and our project's monitoring phase is progressing in a timely fashion.
 
@@ -45,13 +45,13 @@ We currently have no existing or anticipated problems with completion of Task 1 
 
 The Adaptive Management Plan for this project should be seen at minimum as a living document and an active, constant process.
 
-An updated version of the Adaptive Management Plan, and Biological Sampling Plan, were completed in June 2020. The elevation and biological sampling plans continue to evolve as we have now completed the second winter season of post-construction oyster sampling, and ongoing water quality sampling. For example, the variability in oyster counts observed in each strata (substrate, harvest status, location) collected in each winter sampling period is incorporated into our estimate of numbers samples required to achieve a known power of detecting change of particular magnitude for each upcoming sampling period. This sampling effort is then updated mid-winter sampling season based on observed count data collected during the first half of the winter sampling.  Details of this adaptive approach are included in a peer-reviewed publication.
+An updated version of the Adaptive Management Plan, and Biological Sampling Plan, were completed in June 2020. The elevation and biological sampling plans continue to evolve as we have completed the fourth winter season of post-construction oyster sampling, and ongoing water quality sampling. For example, the variability in oyster counts observed in each strata (substrate, harvest status, location) collected in each winter sampling period is incorporated into our estimate of number of samples required to achieve a known power of detecting change of particular magnitude for each sampling period. This sampling effort is then updated mid-winter sampling season based on observed count data collected during the first half of the winter sampling.  Details of this adaptive approach are included in a peer-reviewed publication.
 
 Moore JF, Pine III WE. 2021. Bootstrap methods can help evaluate monitoring program performance to inform restoration as part of an adaptive management program. PeerJ 9:e11378 https://doi.org/10.7717/peerj.11378 
 
 B.	Progress made towards Task 2 milestones.
 
-Updating of the adaptive management plan, biological sampling plan, and elevation data.
+Following of the adaptive management plan, biological sampling plan, and elevation data.
 
 C.	Performance of Task 2 as against the Task 2 Budget. 
 
@@ -101,22 +101,24 @@ No problems are anticipated with the implementation of Task 4, which is complete
 **Task 5. Post-Construction Monitoring**  
 Work performed on Task 5. 
 
-A. We have continued the water quality sampling program, collecting continuous information and downloading sondes every two weeks (see Sections 2 - 5). We have a relational database to track these data and we continue work to develop relationships between water quality data, survey information, and oyster populations (Task 7). Water quality information is publicly available and summarized on the website https://lcroysterproject.github.io/oysterproject/. We maintain a new Zenodo repository and posted a copy of all oyster count data to this repository as described in our data management plan. 
+A. We have continued the water quality sampling program, collecting continuous information and downloading sondes approximately every two weeks (see Sections 2 - 5). We have a relational database to track these data and we continuously work to develop relationships between water quality data, survey information, and oyster populations (Task 7). Water quality information is publicly available and summarized on the website https://lcroysterproject.github.io/oysterproject/. We maintain a Zenodo repository and posted a copy of all oyster count data to this repository as described in our data management plan. 
 
 https://zenodo.org/communities/uf_ifas_oysterproject/?page-1&size=20
 
 This repository will also store code used to complete analyses of various aspects of this project. This is an ongoing effort.  
 
-B. Progress made towards Task 5 milestones.
-.	Postconstruction biological sampling of oyster density and size on all study reefs completed for each winter sampling period. Data for winter 2021-2022 sampling period have been entered, summarized, and preliminary analyses complete. Draft preliminary report is included as an Appendix.
+We have made progress completing the post-construction elevation analyses and hope to complete a manuscript for peer-review soon.
 
-. GF Young Surveyors completed post-construction elevation sampling in winter/spring 2020-2021. We have received this data and are processing the survey results at this time. We anticipate a brief report on these results at the next quarterly report.  
+B. Progress made towards Task 5 milestones.
+.	Postconstruction biological sampling of oyster density and size on all study reefs completed for each winter sampling period. Data for winter 2021-2022 sampling period have been entered, summarized, and preliminary analyses complete. Draft preliminary report was provided last quarter.
+
+. We are working on a draft manuscript of the post-construction survey data.  
 
 C. Performance of Task 5 as against the Task 5 Budget. 
 This task is within schedule and budget. 
 
 D. Existing or anticipated problems with implementation of Task 5. 
-We are starting to see an increase in the errors in the water quality sensors. This may be due to the sensors starting to reach the end of their service life resulting in malfunctions or erratic recordings. These errors are not easily reproducible because the sensor may report as normal, but erratic data would have been recorded during the ~14 day deployment. We are working to address and may need to update several water quality sensors.
+We are starting to see an increase in the errors in the water quality sensors. This may be due to the sensors starting to reach the end of their service life resulting in malfunctions or erratic recordings. These errors are not easily reproducible because the sensor may report as normal, but erratic data would have been recorded during the ~14 day deployment. We are working to address and may need to update several water quality sensors. We are working to complete an analyses that will help us to determine whether we should focus water quality monitoring efforts on a subset of sensors instead of replacing multiple sensors. This preliminary analyses will be completed by late summer 2022.
 
 
 **Task 6.  Outreach and Education** 
@@ -132,9 +134,11 @@ We maintain two public educational displays about the Lone Cabbage restoration p
 
 We continue to update public information about the project primarily through the various electronic and social media produced by the Nature Coast Biological Station in Cedar Key https://ncbs.ifas.ufl.edu/. The public can view data for water quality, oyster landings, and river discharge via the project Shiny App available here https://lcroysterproject.github.io/oysterproject/ 
 
+We presented post-construction results at two meetings. At the FWC Oyster Integrated Mapping and Monitoring Project meeting in St. Petersburg, Florida, Jamie Casteel presented work from her thesis ccharacterizing the relationship between shell biomass and live oyster counts. At the same meeting, Bill Pine presented an update on the oyster population response to the Lone Cabbage Reef restoration. Bill Pine also presented results from the Lone Cabbage Reef restoration as a case history of a restoration project successfully using an adaptive management framework at the Gulf of Mexico Conference in Baton Rouge. Finally, Bill Pine participated in a two-day NFWF-led workshop on oyster reef restoration projects in Milton, Florida where he presented an overview of the restoration of Lone Cabbage Reef. 
+
 A.	Progress made towards Task 6 milestones.
 
-Regular posting of information on NCBS website, social media outlets, and newsletter.
+Regular posting of information on NCBS website, social media outlets, and presentations to practitioners.
 
 B.	Performance of Task 6 as against the Task 6 Budget. 
 
@@ -172,22 +176,20 @@ None anticipated.
 Generally, the budget is within the calendar schedule and on track for completion of all tasks. We reconcile budget vs. expenditure every six months and review project status and progress.   
 
 ***Subtask 8.2. Managing staff***
-Two graduate students (Jamie Casteel and Matthew Richardson) are supported in full or part by this award. The Research Coordinator position remains vacant. Bill Pine has expanded his project duties to include responsibilities previously completed by Peter Frederick. Bill Pine, Matt Richardson, Jamie Casteel, and Jennifer Moore will increase project responsibilities to cover Brad's position until a determination is made as to how to re-fill the position. Several hourly technicians assist with the project in an as-needed basis primarily with field sampling efforts. 
-
-All students and staff made presentations to NFWF personnel during the December 2021 site visit.
+Two graduate students (Jamie Casteel and Matthew Richardson) are supported in full or part by this award. Jamie Casteel successfully defended her MS thesis this quarter and will graduate in August 2022. The Research Coordinator position remains vacant. Bill Pine has expanded his project duties to include responsibilities previously completed by Peter Frederick. Bill Pine, Matt Richardson, Jamie Casteel, and Jennifer Moore will increase project responsibilities to cover the Research Coordinator's responsibilities. Dylan Sinnickson is working for approximately two months as a post-doc to improve the framework for summarizing and comparing oyster height data. Several hourly technicians assist with the project on an as-needed basis primarily with field sampling efforts. 
 
 ***Subtask 8.3. Coordination***
 Coordination has been carried out through as-needed meetings and communications among the three principal investigators, graduate students, research coordinator, student OPS workers, and the UF Libraries data management group (LARC).  
 
-Previous and continuing coordination activities with projects externel to this one have included coordination with county plans for additional oyster restoration activities (Sturmer, Pine), coordination with research planned for the Lower Suwannee National Wildlife Refuge hydrological restoration project (Allen), antipoaching actvities and oyster management by the Florida Fish and Wildlife Conservation Commission (Frederick, Pine, Sturmer), coordination with sampling of fishes on the Lone Cabbage Reef by Nature Coast Biological Station and the Florida Fish and Wildlife Conservation Commission (Allen), coordination with aquaculture activities in the area (Sturmer), coordination with Florida's Oyster Integrated Mapping and Monitoring Project (OIMMP, Pine and Ennis), participation in oyster research and restoration planning efforts by other entities in the region (FWC, TNC, UF, Sturmer, Pine, Allen).  
+Previous and continuing coordination activities with projects external to this one have included coordination with county plans for additional oyster restoration activities (Sturmer, Pine), coordination with research planned for the Lower Suwannee National Wildlife Refuge hydrological restoration project (Allen), antipoaching actvities and oyster management by the Florida Fish and Wildlife Conservation Commission (Frederick, Pine, Sturmer), coordination with sampling of fishes on the Lone Cabbage Reef by Nature Coast Biological Station and the Florida Fish and Wildlife Conservation Commission (Allen), coordination with aquaculture activities in the area (Sturmer), coordination with Florida's Oyster Integrated Mapping and Monitoring Project (OIMMP, Pine and Ennis), participation in oyster research and restoration planning efforts by other entities in the region (FWC, TNC, UF, Sturmer, Pine, Allen).  
 
 ***Subtask 8.4. Reporting***
-During this period we have submitted requests for reimbursement for the April 2022 reporting period, and have completed the quarterly report for the April reporting period. 
+During this period we have submitted requests for reimbursement for the June 2022 reporting period, and have completed the quarterly report for the June reporting period. 
 
 B.	Progress made towards Task 8 milestones.
 
 .	Fiscal reports and requests for reimbursement completed.
-.	Quarterly report completed through April 2022.
+.	Quarterly report completed through June 2022.
 .	Management and training graduate students and OPS student workers.
 .	Internal coordination of this project among staff and PI's, four UF departments, Nature Coast Biological Station.  
 
@@ -205,7 +207,7 @@ UF has submitted payment requests quarterly and we plan to continue this schedul
 
 ##  Any other information necessary for NFWF's evaluation of the Project's progress as measured against the Project Description, Budget, and Project schedule.
 
-We do not have any other information that might help NFWF evaluate teh project's progress. We are increasingly engaged with agency and NGO partners who are completing similar restoration efforts.
+We do not have any other information that might help NFWF evaluate the project's progress. We met in person with NFWF wtaff while attending meetings in Baton Rouge and Milton. We are very engaged with agency partners who are completing similar restoration efforts in Apalachicola in cooperation with NFWF.
 
 ##	Project products and deliverables produced during the applicable reporting period.  
 

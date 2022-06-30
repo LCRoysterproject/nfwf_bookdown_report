@@ -15,14 +15,14 @@ library("scales")
   
 ```{r salinity_data_processing, include=FALSE, warning=FALSE, message= FALSE}
 # Start and end dates for all figures
-startDate <- ymd_hms("2022-01-01 00:00:00")
-endDate <- ymd_hms("2022-03-31 23:00:00")
+startDate <- ymd_hms("2022-04-01 00:00:00")
+endDate <- ymd_hms("2022-06-30 23:00:00")
 
 # Sensor water quality carpentry
 wq <- read.csv("data/wq/wq.csv", header= T) %>%
   filter(Site != 0) 
 
-wq$Obs_Date <- as.Date(wq$Obs_Date, "%m/%d/%Y")
+wq$Obs_Date <- as.Date(wq$Obs_Date, "%Y-%m-%d")
 
 wq<-wq %>% 
   filter(Obs_Date > startDate & Obs_Date < endDate)
