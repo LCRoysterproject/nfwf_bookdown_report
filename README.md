@@ -20,7 +20,7 @@ Needs to be updated every time - this is the update of project status
 ### Chapter 2  (02-wq.Rmd)
 
 Need to update wq.csv input data file
-Change start/end date to correspond to the correct quarter (line 13-14)
+Change start/end date to correspond to the correct quarter (line 18-19)
 
 ### Chapter 3  (03-river_discharge.Rmd)
 

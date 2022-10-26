@@ -32,7 +32,7 @@ dis$year    = as.numeric(strftime(dis$dates,format="%Y"))
 dis$month   = as.numeric(strftime(dis$dates,format="%m")) 
 
 #subset for correct dates
-disE  = dis[dis$dates>='1922-07-01' & dis$dates<='2022-06-30',] 
+disE  = dis[dis$dates>='1922-07-01' & dis$dates<='2022-10-31',] 
 
 #get monthly sum, mean, sd, and var
 #discharge

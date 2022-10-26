@@ -15,8 +15,8 @@ library("scales")
   
 ```{r salinity_data_processing, include=FALSE, warning=FALSE, message= FALSE}
 # Start and end dates for all figures
-startDate <- ymd_hms("2022-04-01 00:00:00")
-endDate <- ymd_hms("2022-06-30 23:00:00")
+startDate <- ymd_hms("2022-08-01 00:00:00")
+endDate <- ymd_hms("2022-10-31 23:00:00")
 
 # Sensor water quality carpentry
 wq <- read.csv("data/wq/wq.csv", header= T) %>%
@@ -57,12 +57,13 @@ wqs1<-wq2 %>%
 
 wqs1['Site'] = as.numeric(1)
 
-wqs2<-wq2 %>%
-  filter(Site == 2) %>% 
-  mutate(Obs_Date = as.Date(Obs_Date)) %>%
-  complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
+# wqs2<-wq2 %>%
+#   filter(Site == 2) %>% 
+#   mutate(Obs_Date = as.Date(Obs_Date)) %>%
+#   complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
 
-wqs2['Site'] = as.numeric(2)
+# wqs2['Site'] = as.numeric(2)
+wqs2 <- NULL
 
 wqs3<-wq2 %>%
   filter(Site == 3) %>% 
@@ -183,7 +184,7 @@ ggplot() +
 
 
 wq_temp <- wq %>%
-  subset(year %in% c('2018','2019', '2020', '2021')) %>%
+  subset(year %in% c('2018','2019', '2020', '2021', '2022')) %>%
   subset(Site %in% c(1:9))
 
 # Sensor water quality carpentry
@@ -209,12 +210,13 @@ wqt1<-wq_temp2 %>%
 
 wqt1['Site'] = as.numeric(1)
 
-wqt2<-wq_temp2 %>%
-  filter(Site == 2) %>% 
-  mutate(Obs_Date = as.Date(Obs_Date)) %>%
-  complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
+#wqt2<-wq_temp2 %>%
+#  filter(Site == 2) %>% 
+#  mutate(Obs_Date = as.Date(Obs_Date)) %>%
+#  complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
 
-wqt2['Site'] = as.numeric(2)
+#wqt2['Site'] = as.numeric(2)
+wqt2 <- NULL
 
 wqt3<-wq_temp2 %>%
   filter(Site == 3) %>% 
