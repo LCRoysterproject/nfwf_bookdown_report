@@ -18,7 +18,7 @@ Reporting Quarter: Ending October 2022
 
 ##	General statement of project status and implementation.  
 
-This report includes work accomplished from July through October 2022. We have attached an Appendix that provides the final sampling framework for winter 2022-2023 as the winter sampling season will begin October 27, 2022.
+This report includes work accomplished from July through October 2022. For reference, we have included information in section 3 as the results from the 2021-2022 winter sampling. We have attached an Appendix that provides the final sampling framework for winter 2022-2023 as the winter sampling season will begin October 27, 2022.
 
 Implementation continues to be mostly smooth, and our project's monitoring phase is progressing in a timely fashion.
 
@@ -107,21 +107,24 @@ https://zenodo.org/communities/uf_ifas_oysterproject/?page-1&size=20
 
 This repository will also store code used to complete analyses of various aspects of this project. This is an ongoing effort.  
 
-We have made progress completing the post-construction elevation analyses but progress slowed during late summer and fall as we prepared for winter field sampling.
+We have made progress analyzing the post-construction elevation information, but this effort was slowed during late summer and fall as we prepared for field sampling.
 
-B. Progress made towards Task 5 milestones.
-.	Postconstruction biological sampling of oyster density and size on all study reefs completed for each winter sampling period. Data for winter 2021-2022 sampling period have been entered, summarized, and preliminary analyses complete and provided earlier. Sampling plans for winter 2022-2023 are completed and provided as an appendix in this report.
+B. Progress made towards Task 5 milestones.   
+.	Postconstruction biological sampling of oyster density and size on all study reefs completed for each winter sampling period. Data for winter 2021-2022 sampling period have been entered, summarized, and analyses complete and provided in earlier reports and included here again as section 3. Sampling plans for winter 2022-2023 are completed and provided as an appendix in this report.   
 
-. We are training commercial oyster harvesters and FWC staff on field survey methods and these people will assist us with winter field sampling efforts.
+. We are training commercial oyster harvesters and FWC staff on field survey methods and these people will assist us with winter field sampling efforts (photos in Appendix).   
 
-. We are working on a draft manuscript of the post-construction survey data.  
+. We are working on a draft manuscript of the post-construction survey data.    
 
 C. Performance of Task 5 as against the Task 5 Budget. 
 This task is within schedule and budget. 
 
 D. Existing or anticipated problems with implementation of Task 5. 
 Hurricane Ian came ashore in October 2022 near Ft. Myers. While the Lone Cabbage Reef location was far from landfall, wave action and anomalous tides caused some issues for the project, including a missing water quality sensor. We are still searching for this sensor.
-We continue to be significantly understaffed. While this results in cost-savings to the grant the work load for remaining staff is substantial.
+
+There are some gaps from this reporting period in the water quality monitoring due to missing data from the original sensor array or errors in the recorded observations by the sensors. We have a second array that has been deployed for a shorter period that is closer to Lone Cabbage Reef than the original water quality array. The sensors used in this array appear to be functioning better, and we will work during the next quarter to consolidate these data and work to correct erroneous measurements or fill data gaps if possible. We have made significant progress in modeling the water quality data (salinity) based on river discharge and wind information (M. Richardson, Ph.D. student), and we will be able to present some of these results in 1-2 quarters.
+
+We continue to be significantly understaffed. While this results in cost-savings to the grant the work load for remaining staff is substantial. We have filled gaps in field sampling crews with local oyster harvesters and FWC has committed staff to helping with sampling efforts.
 
 
 **Task 6.  Outreach and Education** 
@@ -186,6 +189,8 @@ Coordination has been carried out through as-needed meetings and communications 
 
 Previous and continuing coordination activities with projects external to this one have included coordination with county plans for additional oyster restoration activities (Sturmer, Pine), coordination with research planned for the Lower Suwannee National Wildlife Refuge hydrological restoration project (Allen), antipoaching activities and oyster management by the Florida Fish and Wildlife Conservation Commission (Pine), coordination with sampling of fishes on the Lone Cabbage Reef by Nature Coast Biological Station and the Florida Fish and Wildlife Conservation Commission (Allen), coordination with aquaculture activities in the area (Sturmer), coordination with Florida's Oyster Integrated Mapping and Monitoring Project (OIMMP, Pine), participation in oyster research and restoration planning efforts by other entities in the region (FWC, TNC, UF, Pine).  
 
+We are meeting regularly with Cedar Key Oystermen's Association members.
+
 ***Subtask 8.4. Reporting***
 During this period, we have submitted requests for reimbursement for the October 2022 reporting period, and have completed the quarterly report for the October reporting period. 
 
@@ -194,7 +199,7 @@ B.	Progress made towards Task 8 milestones.
 .	Fiscal reports and requests for reimbursement completed.
 .	Quarterly report completed through October 2022.
 .	Management and training graduate students.
-.	Internal coordination of this project among staff and PI's and Nature Coast Biological Station.  
+.	Coordination and training of FWC and Cedar Key based commerial oyster harvesters.  
 
 C.	Performance of Task 8 as against the Task 8 Budget. 
 
@@ -210,7 +215,7 @@ UF has submitted payment requests quarterly and we plan to continue this schedul
 
 ##  Any other information necessary for NFWF's evaluation of the Project's progress as measured against the Project Description, Budget, and Project schedule.
 
-We do not have any other information that might help NFWF evaluate the project's progress.
+We do not have any other information that might help NFWF evaluate the project's progress other than the text and appendix provided.
 
 
 ##	Project products and deliverables produced during the applicable reporting period.  
