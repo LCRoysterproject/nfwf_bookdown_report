@@ -15,8 +15,8 @@ library("scales")
   
 ```{r salinity_data_processing, include=FALSE, warning=FALSE, message= FALSE}
 # Start and end dates for all figures
-startDate <- ymd_hms("2022-08-01 00:00:00")
-endDate <- ymd_hms("2022-10-31 23:00:00")
+startDate <- ymd_hms("2022-10-01 00:00:00")
+endDate <- ymd_hms("2022-12-31 23:00:00")
 
 # Sensor water quality carpentry
 wq <- read.csv("data/wq/wq.csv", header= T) %>%
@@ -79,12 +79,13 @@ wqs4<-wq2 %>%
 
 wqs4['Site'] = as.numeric(4)
 
-wqs5<-wq2 %>%
-  filter(Site == 5) %>% 
-  mutate(Obs_Date = as.Date(Obs_Date)) %>%
-  complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
-
-wqs5['Site'] = as.numeric(5)
+# wqs5<-wq2 %>%
+#   filter(Site == 5) %>% 
+#   mutate(Obs_Date = as.Date(Obs_Date)) %>%
+#   complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
+# 
+# wqs5['Site'] = as.numeric(5)
+wqs5 <- NULL
 
 wqs6<-wq2 %>%
   filter(Site == 6) %>% 
@@ -232,12 +233,13 @@ wqt4<-wq_temp2 %>%
 
 wqt4['Site'] = as.numeric(4)
 
-wqt5<-wq_temp2 %>%
-  filter(Site == 5) %>% 
-  mutate(Obs_Date = as.Date(Obs_Date)) %>%
-  complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
-
-wqt5['Site'] = as.numeric(5)
+# wqt5<-wq_temp2 %>%
+#   filter(Site == 5) %>% 
+#   mutate(Obs_Date = as.Date(Obs_Date)) %>%
+#   complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
+# 
+# wqt5['Site'] = as.numeric(5)
+wqt5 <- NULL
 
 wqt6<-wq_temp2 %>%
   filter(Site == 6) %>% 

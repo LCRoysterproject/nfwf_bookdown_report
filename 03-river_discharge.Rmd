@@ -129,12 +129,12 @@ ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 5, nrow = 15)
 
 plot_list = list()
 
-end2 <- as.numeric(cy) - 2010
+end2 <- as.numeric(cy) - 2011
 
 for (i in 1:end2) { # Loop over loop.vector
   
   # Year of interest, keep this at the current year
-  yoi = i + 2010
+  yoi = i + 2011
   
   # Add year to dis_quant's date for plotting purpose
   dis_quant2 <- dis_quant1 %>%
@@ -161,7 +161,7 @@ for (i in 1:end2) { # Loop over loop.vector
 ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 6)
 ```
 
-**Figure 2-2.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2011-2022 (solid black line).
+**Figure 2-2.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2012-2023 (solid black line).
 
 
 
@@ -169,12 +169,12 @@ ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 6)
 
 plot_list = list()
 
-end3 <- 2012 - 2006
+end3 <- 2013 - 2007
 
 for (i in 1:end3) { # Loop over loop.vector
   
   # Year of interest, keep this at the current year
-  yoi = i + 2006
+  yoi = i + 2007
   
   # Add year to dis_quant's date for plotting purpose
   dis_quant2 <- dis_quant1 %>%
@@ -201,19 +201,19 @@ for (i in 1:end3) { # Loop over loop.vector
 ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 3)
 ```
 
-**Figure 2-3.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2007-2012 (solid black line) representing the years preceding observed extreme low discharge conditions 2010-2012.
+**Figure 2-3.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2008-2013 (solid black line) representing the years preceding observed extreme low discharge conditions 2010-2012.
 
 
 
 ```{r, echo= FALSE, warning=FALSE, message=FALSE, comment=FALSE, fig.height=12, fig.width= 10}
 
 plot_list = list()
-end4 <- as.numeric(cy)-2012
+end4 <- as.numeric(cy)-2013
 
 for (i in 1:end4) { # Loop over loop.vector
   
   # Year of interest, keep this at the current year
-  yoi = i + 2012
+  yoi = i + 2013
   
   # Add year to dis_quant's date for plotting purpose
   dis_quant2 <- dis_quant1 %>%
@@ -240,4 +240,4 @@ for (i in 1:end4) { # Loop over loop.vector
 ggarrange(plotlist=plot_list, common.legend = FALSE, ncol = 2, nrow = 5)
 ```
 
-**Figure 2-4.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2013-2022 (solid black line) representing the years since 2010-2012 low flow conditions including the initiation of the Lone Cabbage Reef restoration project.  
+**Figure 2-4.**  River discharge (by convention CFS, y axis) from the USGS Wilcox, Florida gauge (USGS 02322500) for the years 2014-2023 (solid black line) representing the years since 2010-2012 low flow conditions including the initiation of the Lone Cabbage Reef restoration project.  

@@ -20,7 +20,7 @@ organizeData <- function(data){
   library("lubridate") #format dates
   
   #format date column as a date object
-  #data$date <- mdy(data$date)
+  data$date <- mdy(data$date)
   
   #create season column and make it a factor
   data$season <- ifelse(data$month ==1 | data$month ==2 |data$month ==3 | data$month == 10 | data$month == 11 | data$month == 12, "winter", "summer")
@@ -469,7 +469,7 @@ plotsDensity <- function(data){
           xlab("Oyster density per m^2")+
           ylab("Probability Density Function")+
           labs(title = "Live Oyster Density by Period", fill = "Period",
-               caption = "Figure- Calculated live oyster density for all periods including period 22 (current period) using a probability density function.")+
+               caption = "Figure- Calculated live oyster density for all periods including period 24 (current period) using a probability density function.")+
           facet_wrap(~period, scales = 'free', ncol = 2)+
           scale_x_continuous(limits=c(0,1500)) +
           theme(panel.grid = element_blank(), panel.background = element_blank(), panel.border = element_rect(colour = "black", fill=NA,size=1, linetype="solid"), plot.caption = element_text(hjust = 0)))
@@ -546,7 +546,7 @@ plotsDensity <- function(data){
           scale_shape_manual(values = c(15,16,17,18,19,3,8))+
           scale_color_manual(values = c("#E69F00", "#000000", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7"))+
           labs(title = "Live Oyster Density by Locality and Period", shape = "Locality", colour="Locality", caption = "Figure - Live oyster density by locality and period for all periods including period 22 (current period). ")+
-          scale_y_discrete(limits = c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22")) +
+          scale_y_discrete(limits = c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26")) +
           ylab("Period") +
           xlab ("Oyster density per m^2") +
           theme(panel.grid = element_blank(), panel.background = element_blank(), panel.border = element_rect(colour = "black", fill=NA,size=1, linetype="solid"), plot.caption = element_text(hjust = 0)))
@@ -557,7 +557,7 @@ plotsDensity <- function(data){
           scale_shape_manual(values = c(15,16,17,18,19,3,8))+
           scale_color_manual(values = c("#E69F00", "#000000", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7"))+
           labs(title = "Dead Oyster Density by Locality and Period", shape = "Locality", colour="Locality", caption = "Figure - Dead oyster density by locality and period for all periods including period 22 (current period). ")+
-          scale_y_discrete(limits = c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22")) +
+          scale_y_discrete(limits = c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26")) +
           ylab("Period") +
           xlab ("Oyster density per m^2") +
           theme(panel.grid = element_blank(), panel.background = element_blank(), panel.border = element_rect(colour = "black", fill=NA,size=1, linetype="solid"), plot.caption = element_text(hjust = 0)))
@@ -569,7 +569,7 @@ plotsDensity <- function(data){
           scale_shape_manual(values = c(15,16,17,18,3,8))+
           scale_color_manual(values = c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00"))+
           labs(title = "Live Oyster Density by Strata and Period", shape = "Strata", colour="Strata", caption = "Figure - Live oyster density by strata and period for all periods including period 22 (current period). ") +
-          scale_y_discrete(limits = c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22" )) +
+          scale_y_discrete(limits = c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26")) +
           ylab("Period") +
           xlab ("Oyster density per m^2") +
           theme(panel.grid = element_blank(), panel.background = element_blank(), panel.border = element_rect(colour = "black", fill=NA,size=1, linetype="solid"), plot.caption = element_text(hjust = 0)))
@@ -579,7 +579,7 @@ plotsDensity <- function(data){
           scale_shape_manual(values = c(15,16,17,18,3,8))+
           scale_color_manual(values = c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00"))+
           labs(title = "Dead Oyster Density by Strata and Period", shape = "Strata", colour="Strata", caption = "Figure - Dead oyster density by strata and period for all periods including period 22 (current period). ") +
-          scale_y_discrete(limits = c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22" )) +
+          scale_y_discrete(limits = c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26")) +
           ylab("Period") +
           xlab ("Oyster density per m^2") +
           theme(panel.grid = element_blank(), panel.background = element_blank(), panel.border = element_rect(colour = "black", fill=NA,size=1, linetype="solid"), plot.caption = element_text(hjust = 0)))
@@ -666,7 +666,8 @@ effortPlot<- function(data) {
           xlab ("Period")+
           labs(title = "Total Transect Length Sampled by Period", 
                caption= "Figure- Bar plot of total transect length in meters sampled by period for all periods.") +
-          scale_x_discrete(limits=c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22")) +
+          #scale_x_discrete(limits=c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","24","26")) +
+          scale_x_discrete(limits=c(1:26))+
           theme(panel.grid = element_blank(), panel.background = element_blank(), panel.border = element_rect(colour = "black", fill=NA,size=1, linetype="solid"), plot.caption = element_text(hjust = 0)))
 }
 
@@ -676,27 +677,29 @@ effortPlot<- function(data) {
 #number of completed sites as of last date in data file
 #input organized data file - not aggregated
 progress <- function(data){
-  s <- subset(data, data$period == 24)
+  s <- subset(data, data$period == 26)
   f <- function(x){length(unique(x))}
   s2 <- aggregate(tran_length ~ station + strata + transect, data = s, FUN = max)
   s3 <- aggregate(tran_length ~ strata, data = s2, FUN = 'sum')
   
   Y_NA <- 332
-  N_NA <- 339
-  N_YA <- 1166
-  Y_YA <- 1388
+  N_NA <- 392
+  N_YA <- 625
+  Y_YA <- 854
   
-  Total<- 3225
+  Total<- 2203
   
   ifelse(length(s3$tran_length[s3$strata == "Y_N"])>0, Y_N_done <- s3$tran_length[s3$strata == "Y_N"], Y_N_done <- 0)
   ifelse(length(s3$tran_length[s3$strata == "N_N"])>0, N_N_done <- s3$tran_length[s3$strata == "N_N"], N_N_done <- 0)
-  ifelse(length(s3$tran_length[s3$strata == "N_Y"])>0, N_Y_done <- s3$tran_length[s3$strata == "N_Y"] + s3$tran_length[s3$strata == "N_PILOT"], N_Y_done <- 0)
+  ifelse(length(s3$tran_length[s3$strata == "N_Y"])>0, N_Y_done <- s3$tran_length[s3$strata == "N_Y"], N_Y_done <- 0)
+  ifelse(length(s3$tran_length[s3$strata == "N_PILOT"])>0, N_Y_pilot_done <- s3$tran_length[s3$strata == "N_PILOT"], N_Y_pilot_done <- 0)
   ifelse(length(s3$tran_length[s3$strata == "Y_Y"])>0, Y_Y_done <- s3$tran_length[s3$strata == "Y_Y"], Y_Y_done <- 0)
   
-  ifelse(Y_N_done >= Y_NA, Y_N_Bar <- 100, Y_N_Bar <- (Y_N_done / Y_NA) * 100)
-  ifelse(N_N_done >= N_NA, N_N_Bar <- 100, N_N_Bar <- (N_N_done / N_NA) * 100)
-  ifelse(N_Y_done >= N_YA, N_Y_Bar <- 100, N_Y_Bar <- (N_Y_done / N_YA) * 100)
-  ifelse(Y_Y_done >= Y_YA, Y_Y_Bar <- 100, Y_Y_Bar <- (Y_Y_done / Y_YA) * 100)
+  Y_N_Bar <- (Y_N_done / Y_NA) * 100
+  N_N_Bar <- (N_N_done / N_NA) * 100
+  N_Y_Bar <- ((N_Y_done+N_Y_pilot_done) / N_YA) * 100
+  Y_Y_Bar <- (Y_Y_done / Y_YA) * 100
+  
   
   Y_N_sub_total<- min(Y_NA, Y_N_done)
   N_N_sub_total<- min(N_NA, N_N_done)
