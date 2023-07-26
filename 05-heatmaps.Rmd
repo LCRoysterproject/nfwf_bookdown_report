@@ -32,7 +32,7 @@ dis$year    = as.numeric(strftime(dis$dates,format="%Y"))
 dis$month   = as.numeric(strftime(dis$dates,format="%m")) 
 
 #subset for correct dates
-disE  = dis[dis$dates>='1922-07-01' & dis$dates<='2023-04-01',] 
+disE  = dis[dis$dates>='1922-07-01' & dis$dates<='2023-07-01',] 
 
 #get monthly sum, mean, sd, and var
 #discharge
@@ -76,10 +76,10 @@ plot(dis_per2, xlab = "Month", ylab = "Year",
      col = colAll, na.col = "black")
 ```
   
-**Figure 3-1.**  Heat map of Suwannee River deviations in mean daily discharge by year and month from USGS Wilcox gauge (02322500) for the period of record measured as deviation from the average by month for period of record.  White color for a given month and year is a month when river discharge is similar (with +/- 10%) to the period of record average, while blue to dark blue colors represent increasing discharge levels deviating as a percentage from the long-term average.  Red to dark red colors conversely equal increasingly low discharge levels (below the period of record average). The black colors are months when data are not available.  
+**Figure 4-1.**  Heat map of Suwannee River deviations in mean daily discharge by year and month from USGS Wilcox gauge (02322500) for the period of record measured as deviation from the average by month for period of record.  White color for a given month and year is a month when river discharge is similar (with +/- 10%) to the period of record average, while blue to dark blue colors represent increasing discharge levels deviating as a percentage from the long-term average.  Red to dark red colors conversely equal increasingly low discharge levels (below the period of record average). The black colors are months when data are not available.  
 
 ```{r, echo=FALSE,  warning=FALSE, message=FALSE, comment=FALSE}
-include_years <- as.character(as.numeric(2005:2022))
+include_years <- as.character(as.numeric(2005:2023))
 dis_per20052021 <- dis_per2[include_years, ]
 par(oma=c(0.5,0.5,0.5,3))
 plot(dis_per20052021, xlab = "Month", ylab = "Year",
@@ -89,11 +89,11 @@ plot(dis_per20052021, xlab = "Month", ylab = "Year",
      col = colAll, na.col = "black")
 ```
   
-**Figure 3-2.**  Heat map of Suwannee River deviations in mean daily discharge by year and month from USGS Wilcox gauge (02323500) for 2005-2021 measured as deviation from the average by month for period of record.  White color for a given month and year is a month when river discharge is similar (with +/- 10%) to the period of record average, while blue to dark blue colors represent increasing discharge levels deviating as a percentage from the long-term average.  Red to dark red colors conversely equal increasingly low discharge levels (below the period of record average).  The black colors are months when data are not available.
+**Figure 4-2.**  Heat map of Suwannee River deviations in mean daily discharge by year and month from USGS Wilcox gauge (02323500) for 2005-2023 measured as deviation from the average by month for period of record.  White color for a given month and year is a month when river discharge is similar (with +/- 10%) to the period of record average, while blue to dark blue colors represent increasing discharge levels deviating as a percentage from the long-term average.  Red to dark red colors conversely equal increasingly low discharge levels (below the period of record average).  The black colors are months when data are not available.
 
 
 ```{r, echo=FALSE,  warning=FALSE, message=FALSE, comment=FALSE}
-include_years <- as.character(as.numeric(2018:2022))
+include_years <- as.character(as.numeric(2018:2023))
 dis_per20182020 <- dis_per2[include_years, ]
 par(oma=c(0.5,0.5,0.5,3))
 plot(dis_per20182020, xlab = "Month", ylab = "Year",
@@ -103,4 +103,4 @@ plot(dis_per20182020, xlab = "Month", ylab = "Year",
      col = colAll, na.col = "black")
 ```
   
-**Figure 3-3.**  Heat map of Suwannee River deviations in mean daily discharge by year and month from USGS Wilcox gauge (02323500) for 2018-2021 measured as deviation from the average by month for period of record.  White color for a given month and year is a month when river discharge is similar (with +/- 10%) to the period of record average, while blue to dark blue colors represent increasing discharge levels deviating as a percentage from the long-term average.  Red to dark red colors conversely equal increasingly low discharge levels (below the period of record average).  The black colors are months when data are not available.
+**Figure 4-3.**  Heat map of Suwannee River deviations in mean daily discharge by year and month from USGS Wilcox gauge (02323500) for 2018-2023 measured as deviation from the average by month for period of record.  White color for a given month and year is a month when river discharge is similar (with +/- 10%) to the period of record average, while blue to dark blue colors represent increasing discharge levels deviating as a percentage from the long-term average.  Red to dark red colors conversely equal increasingly low discharge levels (below the period of record average).  The black colors are months when data are not available.

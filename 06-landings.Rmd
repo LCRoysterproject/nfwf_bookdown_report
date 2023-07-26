@@ -125,7 +125,7 @@ all_landings$value<- factor(all_landings$value,levels=c ("Landings (lbs)", "Tota
   facet_wrap(~value , scales="free_y", ncol= 1) 
 ```
   
-**Figure 4-1.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange), and the State of Florida (pink) for years `r startYear` to `r endYear`.  
+**Figure 5-1.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange), and the State of Florida (pink) for years `r startYear` to `r endYear`.  
   
 ```{r echo=FALSE, fig.width= 7, fig.height= 8}
 all_landings %>% 
@@ -154,7 +154,7 @@ ggplot(aes(x= as.numeric(Year), y= as.numeric(measurement))) +
 
 ```
   
-**Figure 4-2.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange) for years 2012 to `r endYear`.  
+**Figure 5-2.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange) for years 2012 to `r endYear`.  
   
   
 ```{r, echo=FALSE, fig.width= 7, fig.height= 8}
@@ -185,5 +185,5 @@ all_landings %>%
 
 ```
   
-**Figure 4-3.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange) for years 2015 to `r endYear`.  
+**Figure 5-3.** Figure of oyster landings (lbs), total trips, and cost per unit effort (CPUE) for Apalachicola (blue line), Suwannee Sound (orange) for years 2015 to `r endYear`.  
   

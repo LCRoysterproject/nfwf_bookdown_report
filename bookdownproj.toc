@@ -1,6 +1,6 @@
 \contentsline {subsection}{\numberline {0.1}General statement of project status and implementation.}{2}{subsection.0.1}%
-\contentsline {subsection}{\numberline {0.2}Submission schedule for payment requests.}{6}{subsection.0.2}%
-\contentsline {subsection}{\numberline {0.3}Any other information necessary for NFWF's evaluation of the Project's progress as measured against the Project Description, Budget, and Project schedule.}{6}{subsection.0.3}%
+\contentsline {subsection}{\numberline {0.2}Submission schedule for payment requests.}{5}{subsection.0.2}%
+\contentsline {subsection}{\numberline {0.3}Any other information necessary for NFWF's evaluation of the Project's progress as measured against the Project Description, Budget, and Project schedule.}{5}{subsection.0.3}%
 \contentsline {subsection}{\numberline {0.4}Project products and deliverables produced during the applicable reporting period.}{6}{subsection.0.4}%
 \contentsline {section}{\numberline {1}Water Quality Quarterly Figures}{7}{section.1}%
 \contentsline {section}{\numberline {2}River Discharge Figures}{13}{section.2}%

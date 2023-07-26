@@ -110,7 +110,7 @@ s <- subset(org_data, org_data$period == 26)
 | N_N    | `r N_N_sub_total`        | 
 | N_Y    |`r N_Y_sub_total`         | 
   
-**Table 4-1.** - Displaying the total meters surveyed during period 26 per strata.
+**Table 3-1.** - Displaying the total meters surveyed during period 26 per strata.
 
 
 ### Summary Plots for Periods 20, 22, 24, and 26
@@ -139,7 +139,7 @@ current_plot %>%
 
 ```
   
-**Figure 4-1.**- Calculated live oyster density by locality for periods 20 (Winter 2019-2020), 22 (Winter 2020-2021), 24 (Winter 2021-2022), and 26 (Winter 2022-2023) with the last sample date of period 26 as `r tail(org_data$date, 1)`.
+**Figure 3-1.**- Calculated live oyster density by locality for periods 20 (Winter 2019-2020), 22 (Winter 2020-2021), 24 (Winter 2021-2022), and 26 (Winter 2022-2023) with the last sample date of period 26 as `r tail(org_data$date, 1)`.
 \newpage
 
 ```{r,echo=FALSE,comment=NA}
@@ -159,7 +159,7 @@ current_plot %>%
   facet_wrap(~locality)
 ```
   
-**Figure 4-2.**- Calculated dead oyster density by locality for periods 20 (Winter 2019-2020), 21 (Winter 2020-2021), 24 (Winter 2021-2022), and 26 (Winter 2022-2023) with the last sample date of period 26 as `r tail(org_data$date, 1)`.
+**Figure 3-2.**- Calculated dead oyster density by locality for periods 20 (Winter 2019-2020), 21 (Winter 2020-2021), 24 (Winter 2021-2022), and 26 (Winter 2022-2023) with the last sample date of period 26 as `r tail(org_data$date, 1)`.
 \newpage
 
 ```{r 2022_strata,echo=FALSE,comment=NA }
@@ -181,7 +181,7 @@ current_plot %>%
 
 ```
   
-**Figure 4-3.**- Calculated live oyster density by strata for  periods 20 (Winter 2019-2020), 22 (Winter 2020-2021), 24 (Winter 2021-2022), and 26 (Winter 2022-2023) with the last sample date of period 26 as `r tail(org_data$date, 1)`.
+**Figure 3-3.**- Calculated live oyster density by strata for  periods 20 (Winter 2019-2020), 22 (Winter 2020-2021), 24 (Winter 2021-2022), and 26 (Winter 2022-2023) with the last sample date of period 26 as `r tail(org_data$date, 1)`.
 \newpage
 
 
@@ -202,7 +202,7 @@ current_plot %>%
     facet_wrap(~strata, ncol= 2)
 ```
   
-**Figure 4-4.**- Calculated dead oyster density by strata for periods 20 (Winter 2019-2020), 22 (Winter 2020-2021), 24 (Winter 2021-2022), and 26 (Winter 2022-2023) with the last sample date of period 26 as `r tail(org_data$date, 1)`.
+**Figure 3-4.**- Calculated dead oyster density by strata for periods 20 (Winter 2019-2020), 22 (Winter 2020-2021), 24 (Winter 2021-2022), and 26 (Winter 2022-2023) with the last sample date of period 26 as `r tail(org_data$date, 1)`.
 \newpage
 
 
@@ -223,7 +223,7 @@ ggplot(aes(x=density, fill = as.factor(period))) +
 
 ```
   
-**Figure 4-5.**- Calculated live oyster density by periods 20 (Winter 2019-2020) and 22 (Winter 2020-2021) using a probability density function.
+**Figure 3-5.**- Calculated live oyster density by periods 20 (Winter 2019-2020) and 22 (Winter 2020-2021) using a probability density function.
 \newpage
 
 ```{r, echo=FALSE, comment=NA, error= FALSE}
@@ -239,7 +239,7 @@ ggplot(aes(x=density_dead, fill = as.factor(period))) +
           theme(panel.grid = element_blank(), panel.background = element_blank(), panel.border = element_rect(colour = "black", fill=NA,size=1, linetype="solid"))
 ```
   
-**Figure 4-6.**- Calculated dead oyster density by periods 20 (Winter 2019-2020) and 22 (Winter 2020-2021) using a probability density function.
+**Figure 3-6.**- Calculated dead oyster density by periods 20 (Winter 2019-2020) and 22 (Winter 2020-2021) using a probability density function.
 \newpage
 
     
@@ -257,7 +257,7 @@ ggplot(aes(x=density, fill = as.factor(period))) +
 
 ```
   
-**Figure 4-7.**- Calculated live oyster density by periods 22 (Winter 2020-2021) and 24 (Winter 2021-2022) using a probability density function.
+**Figure 3-7.**- Calculated live oyster density by periods 22 (Winter 2020-2021) and 24 (Winter 2021-2022) using a probability density function.
 \newpage
 
 ```{r, echo=FALSE, comment=NA, error= FALSE}
@@ -273,7 +273,7 @@ ggplot(aes(x=density_dead, fill = as.factor(period))) +
           theme(panel.grid = element_blank(), panel.background = element_blank(), panel.border = element_rect(colour = "black", fill=NA,size=1, linetype="solid"))
 ```
   
-**Figure 4-8.**- Calculated dead oyster density by periods 22 (Winter 2020-2021) and 24 (Winter 2021-2022) using a probability density function.
+**Figure 3-8.**- Calculated dead oyster density by periods 22 (Winter 2020-2021) and 24 (Winter 2021-2022) using a probability density function.
 \newpage
 
 ```{r, echo=FALSE, comment=NA, error= FALSE}
@@ -289,7 +289,7 @@ ggplot(aes(x=density, fill = as.factor(period))) +
           theme(panel.grid = element_blank(), panel.background = element_blank(), panel.border = element_rect(colour = "black", fill=NA,size=1, linetype="solid"))
 
 ```
-**Figure 4-9.**- Calculated live oyster density by periods 24 (Winter 2021-2022) and 26 (Winter 2022-2023) using a probability density function with the last sample date of period 26 as `r tail(org_data$date, 1)`.
+**Figure 3-9.**- Calculated live oyster density by periods 24 (Winter 2021-2022) and 26 (Winter 2022-2023) using a probability density function with the last sample date of period 26 as `r tail(org_data$date, 1)`.
 \newpage
 
 ```{r, echo=FALSE, comment=NA, error= FALSE}
@@ -304,7 +304,7 @@ ggplot(aes(x=density_dead, fill = as.factor(period))) +
           scale_fill_manual(values=c("#56B4E9", "#F0E442"))+
           theme(panel.grid = element_blank(), panel.background = element_blank(), panel.border = element_rect(colour = "black", fill=NA,size=1, linetype="solid"))
 ```
-**Figure 4-10**- Calculated dead oyster density by periods 24 (Winter 2021-2022) and 26 (Winter 2022-2023) using a probability density function with the last sample date of period 26 as `r tail(org_data$date, 1)`.
+**Figure 3-10**- Calculated dead oyster density by periods 24 (Winter 2021-2022) and 26 (Winter 2022-2023) using a probability density function with the last sample date of period 26 as `r tail(org_data$date, 1)`.
 \newpage
 
 ```{r, echo=FALSE, comment=NA, error= FALSE}
@@ -329,7 +329,7 @@ data1$strata <- factor(data1$strata, levels = c("Y_Y", "Y_N", "N_Y", "N_N", "N_P
     facet_wrap(~strata, ncol= 2)
 ```
   
-**Figure 4-11.**- Live and dead oyster count comparison by periods 20 (Winter 2019- 2020), 22 (Winter 2020-2021), 24 (Winter 2021-2022), and 26 (Winter 2022-2023), last sample date of period 26 as `r tail(org_data$date, 1)`.
+**Figure 3-11.**- Live and dead oyster count comparison by periods 20 (Winter 2019- 2020), 22 (Winter 2020-2021), 24 (Winter 2021-2022), and 26 (Winter 2022-2023), last sample date of period 26 as `r tail(org_data$date, 1)`.
 
 
 ```{r, echo=FALSE, fig.height = 8, fig.height = 8}
@@ -351,6 +351,6 @@ ggplot( data= data1, aes( x= count_live, y= count_dead)) +
     facet_wrap(~strata, ncol= 2 )
 ```
   
-**Figure 4-12.**- Live and dead oyster comparison for all periods, last sample date of period 26 is `r tail(org_data$date, 1)`.
+**Figure 3-12.**- Live and dead oyster comparison for all periods, last sample date of period 26 is `r tail(org_data$date, 1)`.
 \newpage
 

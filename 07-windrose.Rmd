@@ -18,9 +18,10 @@ library("cowplot")
 #wind18 <- buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2018)
 #wind19 <- buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2019)
 #wind20 <- buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2020)
-wind21 <- buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2021)
+#wind21 <- buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2021)
 wind22 <- buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2022)
-wind <- rbind(wind21$data, wind22$data) %>% dplyr::distinct()
+wind23 <- buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2023)
+wind <- rbind(wind22$data, wind23$data) %>% dplyr::distinct()
 
 # Shrink the wind table, and convert the format of time
 wind$time <- ymd_hms(wind$time)
@@ -178,11 +179,11 @@ plot.windrose <- function(data,
 
 ```{r, include= FALSE}
 wind0 <- wind %>%
-  filter(time >= "2022-01-01 00:00:00" & time <= "2022-01-31 00:00:00") %>%
+  filter(time >= "2023-05-01 00:00:00" & time <= "2023-05-31 00:00:00") %>%
   select(time, wind_spd, wind_dir)
 
 wind1 <- wind %>%
-  filter(time >= "2022-02-01 00:00:00" & time <= "2022-02-28 00:00:00") %>%
+  filter(time >= "2023-06-01 00:00:00" & time <= "2023-06-30 00:00:00") %>%
   select(time, wind_spd, wind_dir)
 
 
@@ -210,5 +211,4 @@ plot_grid(wind0_plot, wind1_plot, labels = c("A", "B"),
 #          label_size = 16)
 
 ```
-**Figure 5-1.** A wind rose visualizes the frequency of winds blowing from a specific direction of a desired Date Range. The data used for this figure were collected via the `rnoaa` R Package at station CDRF1 (Cedar Key, Florida). The legend represents the wind speed ranging from low (2-4 m/s) to high (18-20 m/s) wind speeds. The cardinal directions on the outer part of the wind rose indicate the direction of the wind. The Frequency is displayed as the lowest to highest percentage frequency of a wind speed occuring in a given direction, by the size of the wind magnitude polygon. Wind data are updated periodically through USGS (monthly basis).A) Windrose from January 1, 2022 to January 31, 2022, B) Windrose from February 1, 2022 to February 28, 2022,  C) Windrose from March 1, 2022 to March 31, 2022.
-
+**Figure 6-1.** A wind rose visualizes the frequency of winds blowing from a specific direction of a desired Date Range. The data used for this figure were collected via the `rnoaa` R Package at station CDRF1 (Cedar Key, Florida). The legend represents the wind speed ranging from low (2-4 m/s) to high (18-20 m/s) wind speeds. The cardinal directions on the outer part of the wind rose indicate the direction of the wind. The Frequency is displayed as the lowest to highest percentage frequency of a wind speed occuring in a given direction, by the size of the wind magnitude polygon. Wind data are updated periodically through USGS (monthly basis).A) Windrose from May 1, 2023 to May 31, 2022, B) Windrose from June 1, 2023 to June 30, 2023.

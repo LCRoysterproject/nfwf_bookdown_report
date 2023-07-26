@@ -3,7 +3,9 @@ output:
   pdf_document: default
   html_document: default
 ---
-# Water Quality Quarterly Figures  
+\newpage
+# Water Quality Quarterly Figures 
+
 
 ```{r wq_options, include=FALSE, warning=FALSE, message=FALSE, comment=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -15,8 +17,8 @@ library("scales")
   
 ```{r salinity_data_processing, include=FALSE, warning=FALSE, message= FALSE}
 # Start and end dates for all figures
-startDate <- ymd_hms("2023-01-01 00:00:00")
-endDate <- ymd_hms("2023-3-09 23:00:00")
+startDate <- ymd_hms("2022-03-01 00:00:00")
+endDate <- ymd_hms("2023-3-01 23:00:00")
 
 # Sensor water quality carpentry
 wq <- read.csv("data/wq/wq.csv", header= T) %>%
@@ -57,13 +59,13 @@ wqs1<-wq2 %>%
 
 wqs1['Site'] = as.numeric(1)
 
-# wqs2<-wq2 %>%
-#   filter(Site == 2) %>% 
-#   mutate(Obs_Date = as.Date(Obs_Date)) %>%
-#   complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
+ wqs2<-wq2 %>%
+   filter(Site == 2) %>% 
+   mutate(Obs_Date = as.Date(Obs_Date)) %>%
+   complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
 
-# wqs2['Site'] = as.numeric(2)
-wqs2 <- NULL
+ wqs2['Site'] = as.numeric(2)
+#wqs2 <- NULL
 
 wqs3<-wq2 %>%
   filter(Site == 3) %>% 
@@ -79,13 +81,13 @@ wqs4<-wq2 %>%
 
 wqs4['Site'] = as.numeric(4)
 
-# wqs5<-wq2 %>%
-#   filter(Site == 5) %>% 
-#   mutate(Obs_Date = as.Date(Obs_Date)) %>%
-#   complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
-# 
-# wqs5['Site'] = as.numeric(5)
-wqs5 <- NULL
+ wqs5<-wq2 %>%
+   filter(Site == 5) %>% 
+   mutate(Obs_Date = as.Date(Obs_Date)) %>%
+   complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
+ 
+ wqs5['Site'] = as.numeric(5)
+#wqs5 <- NULL
 
 wqs6<-wq2 %>%
   filter(Site == 6) %>% 
@@ -152,7 +154,7 @@ ggplot() +
                                          breaks = waiver())) +
    
   scale_x_datetime(breaks = seq(startDate,
-                 endDate, "2 weeks"), date_labels = "%b %d %Y",expand = c(0, 0)) +
+                 endDate, "4 weeks"), date_labels = "%b %d %Y",expand = c(0, 0)) +
 
   
   scale_fill_manual(values = c("#56B4E9", "#000000")) +
@@ -211,13 +213,13 @@ wqt1<-wq_temp2 %>%
 
 wqt1['Site'] = as.numeric(1)
 
-#wqt2<-wq_temp2 %>%
-#  filter(Site == 2) %>% 
-#  mutate(Obs_Date = as.Date(Obs_Date)) %>%
-#  complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
+wqt2<-wq_temp2 %>%
+  filter(Site == 2) %>% 
+  mutate(Obs_Date = as.Date(Obs_Date)) %>%
+  complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
 
-#wqt2['Site'] = as.numeric(2)
-wqt2 <- NULL
+wqt2['Site'] = as.numeric(2)
+#wqt2 <- NULL
 
 wqt3<-wq_temp2 %>%
   filter(Site == 3) %>% 
@@ -233,13 +235,13 @@ wqt4<-wq_temp2 %>%
 
 wqt4['Site'] = as.numeric(4)
 
-# wqt5<-wq_temp2 %>%
-#   filter(Site == 5) %>% 
-#   mutate(Obs_Date = as.Date(Obs_Date)) %>%
-#   complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
-# 
-# wqt5['Site'] = as.numeric(5)
-wqt5 <- NULL
+ wqt5<-wq_temp2 %>%
+   filter(Site == 5) %>% 
+   mutate(Obs_Date = as.Date(Obs_Date)) %>%
+   complete(Obs_Date = seq.Date(min(Obs_Date), max(Obs_Date), by="day"))
+ 
+ wqt5['Site'] = as.numeric(5)
+#wqt5 <- NULL
 
 wqt6<-wq_temp2 %>%
   filter(Site == 6) %>% 
@@ -280,7 +282,7 @@ ggplot() +
                                          breaks = waiver())) +
   
   scale_x_datetime(breaks = seq(startDate,
-                 endDate, "2 weeks"), date_labels = "%b %d %Y",expand = c(0, 0)) +
+                 endDate, "4 weeks"), date_labels = "%b %d %Y",expand = c(0, 0)) +
 
   
   scale_fill_manual(values = c("#56B4E9", "#D55E00")) +
