@@ -1,14 +1,14 @@
 \contentsline {subsection}{\numberline {0.1}General statement of project status and implementation.}{2}{subsection.0.1}%
 \contentsline {subsection}{\numberline {0.2}Submission schedule for payment requests.}{5}{subsection.0.2}%
-\contentsline {subsection}{\numberline {0.3}Any other information necessary for NFWF's evaluation of the Project's progress as measured against the Project Description, Budget, and Project schedule.}{6}{subsection.0.3}%
-\contentsline {subsection}{\numberline {0.4}Project products and deliverables produced during the applicable reporting period.}{6}{subsection.0.4}%
-\contentsline {section}{\numberline {1}Water Quality Quarterly Figures}{7}{section.1}%
-\contentsline {section}{\numberline {2}River Discharge Figures}{13}{section.2}%
-\contentsline {section}{\numberline {3}Transect Report}{18}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Overview}{18}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Definition of Localities and Strata}{18}{subsubsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.2}Current Sampling (progress)}{18}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Summary Plots for Periods 20, 22, 24, and 26}{20}{subsubsection.3.2.1}%
-\contentsline {section}{\numberline {4}River Discharge Heatmaps}{32}{section.4}%
-\contentsline {section}{\numberline {5}Oyster Landings Figures}{35}{section.5}%
-\contentsline {section}{\numberline {6}Quarterly Windrose}{39}{section.6}%
+\contentsline {subsection}{\numberline {0.3}Any other information necessary for NFWF's evaluation of the Project's progress as measured against the Project Description, Budget, and Project schedule.}{5}{subsection.0.3}%
+\contentsline {subsection}{\numberline {0.4}Project products and deliverables produced during the applicable reporting period.}{5}{subsection.0.4}%
+\contentsline {section}{\numberline {1}Water Quality Quarterly Figures}{6}{section.1}%
+\contentsline {section}{\numberline {2}River Discharge Figures}{12}{section.2}%
+\contentsline {section}{\numberline {3}Transect Report}{17}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Overview}{17}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Definition of Localities and Strata}{17}{subsubsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.2}Current Sampling (progress)}{17}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Summary Plots for Periods 20, 22, 24, and 26}{19}{subsubsection.3.2.1}%
+\contentsline {section}{\numberline {4}River Discharge Heatmaps}{31}{section.4}%
+\contentsline {section}{\numberline {5}Oyster Landings Figures}{34}{section.5}%
+\contentsline {section}{\numberline {6}Quarterly Windrose}{38}{section.6}%

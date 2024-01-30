@@ -14,14 +14,14 @@ Easygrants ID:	 54029
 Project Title:	Recovery and Resilience of Oyster Reefs in the Big Bend of Florida		
 Organization:	University of Florida				
 Project Term:	12/01/2016 - 11/30/2024   
-Reporting Quarter: Ending October 2023 
+Reporting Quarter: Ending December 2023 
 
 
 ##	General statement of project status and implementation.  
 
-This report includes work accomplished from August 2023 through October 2023. We are writing the final project report following the guidelines provided by NFWF.
+This report includes work accomplished from October 2023 through December 2023. We are writing the final project report following the guidelines provided by NFWF.
 
-To date, this project is within budget and timeline.  
+To date, this project is under budget and ahead of schedule.
  
 **ii. Updates on individual tasks.** 
   
@@ -56,11 +56,11 @@ We are using the Adaptive Management Plan to guide completion of the final repor
 
 C.	Performance of Task 2 as against the Task 2 Budget. 
 
-Task 2 appears to be within the timeline and budget set out in the proposal.
+Task 2 is within the timeline and budget set out in the proposal.
 
 D.	Existing or anticipated problems with implementation of Task 2. 
 
-We do not anticipate any problems with implementation of Task 2.
+We do not anticipate any problems with the implementation of Task 2.
 
 
 **Task 3.  Preconstruction Monitoring**  
@@ -74,7 +74,7 @@ All subtasks within Task 3 have been completed.
 
 C.	Performance of Task 3 as against the Task 3 Budget. 
 
-This task appears to be well within budget and the schedule of spending as identified in the proposal. 
+This task is well within budget and the spending schedule as identified in the proposal. 
 
 D.	Existing or anticipated problems with implementation of Task 3. 
 
@@ -84,7 +84,7 @@ This task is completed.
 **Task 4.  Construction**  
  A.	Work performed on Task 4.
 
-All construction activities were completed by November of 2018, so no new work is reported here on construction activities.  
+All construction activities were completed by November of 2018, so no new work is reported here.  
 
 B.	Progress made towards Task 4 milestones.
 
@@ -92,7 +92,7 @@ All aspects of reef construction were completed as of November 30, 2018.
 
 C.	Performance of Task 4 as against the Task 4 Budget. 
 
-This task has been completed on schedule, and within budget. 
+This task has been completed on schedule and within budget. 
 
 D.	Existing or anticipated problems with implementation of Task 4. 
 
@@ -102,26 +102,25 @@ No problems are anticipated with the implementation of Task 4, which is complete
 **Task 5. Post-Construction Monitoring**  
 A.Work performed on Task 5. 
 
-We continued the water quality sampling program until March 9, 2023 and then discontinued the program by retrieving the array. The decommissioning of the water quality array occurred several weeks after the last winter monitoring sample. Data have been uploaded into the relational database used to track these data. We have been working through a final QA/QC of the water quality data and we have received the last samples from the LakeWatch lab. We continuously work to develop relationships between water quality data, survey information, and oyster populations (Task 7). Water quality information is publicly available and summarized on the website https://lcroysterproject.github.io/oysterproject/. We created a Zenodo repository and posted a copy of all oyster count data to this repository as described in our data management plan.
+We continued the water quality sampling program until March 9, 2023 and then discontinued the program by retrieving the array. The decommissioning of the water quality array occurred several weeks after the last winter monitoring sample. Data have been uploaded into the relational database used to track these data. We created a Zenodo repository and posted a copy of all oyster count data to this repository as described in our data management plan.
 
 http://zenodo.org/communities/uf_ifas_oysterproject/?page=1%size=20
 
 This repository will also store code used to complete analyses of various aspects of this project. This is an ongoing effort.
 
+We have a draft of the first phase of the water quality monitoring included as an appendix. This will be revised into the final report format.
+
+We also have a draft of the analyses of the counts included as an appendix. This will be revised into the final report format.  
+
 B. Progress made towards Task 5 milestones.   
-.	Postconstruction biological sampling of oyster density and size on all study reefs completed for each winter sampling period. Data for the current (winter 2022-2023) sampling period have been entered and summarized, and preliminary results are included as an Appendix. 
-
-. GF Young Surveyors completed post-construction elevation sampling in winter/spring 2020-2021. We have received this data and are currently processing the survey results. While working on the survey data this quarter, we identified anomalies and incomplete records in some geospatial information. We worked extensively to identify and correct these anomalies, which necessitated hand-checking of spatial coordinates. Errors were corrected, and we can now resume working on the geospatial aspects of the project.
-
-. Hurricane Idalia made landfall approximately 30-km north of Cedar Key adn less than 20-km from the Lone Cabbage Reef on August 30, 2023. Idalia produced the largest recorded storm surge during the period of instrument record for Cedar Key and led to widespread damage to public and private property and natural features. We have conducted basic bisual assessments of the Lone Cabbage Reef and found that the rocks appear to be in place as designed. It does appear that oyster clusters that were between the rocks during winter 2022-2023 have been displaced and may be concentrated on the landward side of the reef. There appears to have been some sedimentation of the reef on the lower 1/3 of reef elements. We are unsure whether permitting agencies or NFWF would like us to investigate this further.
-
-. We have provided a draft manuscript on oyster reef heights as an appendix.
+.	Progress made on completing analyses of the elevation data. First drafts of the basic water quality analyses and oyster count analyses are completed and ready to be converted into NFWF reporting format.  
+. We hope to submit oyster height manuscript.  
 
 C. Performance of Task 5 as against the Task 5 Budget. 
 This task is within schedule and budget. 
 
 D. Existing or anticipated problems with implementation of Task 5. 
-Nathan Rogers has been on sick leave for most of the reporting period and unable to work. Bill Pine has transitioned to 50% employment with the University of Florida. He is committed to completing the project as agreed but is no longer able to meet workload demands to complete the project as he has done in recent years. 
+Nathan Rogers was on sick leave for the reporting period and count not work. Bill Pine has a 20% appointment. The required hours to complete the project are more than the appointment.  
 
 
 **Task 6.  Outreach and Education** 
@@ -131,17 +130,13 @@ Work performed on Task 6.
 Since construction has been completed there is no new information to report.
 
 ***Subtask 6.2.  Post-construction education and outreach*** 
-We are working with Florida SeaGrant to develop a story board for the Lone Cabbage Project.
-
-Bill Pine met with the Cedar Key Aquaculture Association and Cedar Key community members on August 15 and 16 in Cedar Key. He presented an overview of the Lone Cabbage Reef project and had extensive discussions with the community related to concerns that have recently emerged within the community related to whether or not the restoration of Lone Cabbage Reef altered water quality in shellfish lease areas. This was motivated by large observed losses in farmed clam resources during summer 2023. Lone Cabbage Reef results do not suggest that the restoration led to any changes in water quality in the shellfish lease areas. This conclusion seems to be accepted by the Cedar Key Aquaculture Association leadership, but not some focal members. This led to further discussions about a deployment of the old, but operable, salinity sensors from the Lone Cabbage restoration project near the lease sites. However, these discussions were abandoned after the region was heavily damaged by Hurricane Idalia about two weeks later.
+We worked with Cedar Key Oystermen's Association to develop ideas for future restoration efforts using the "County" dollars from DWY.  
 
 A. Progress made towards Task 6 milestones.
 
-PI Pine presented public seminars to the general public in the town of Cedar Key and to the Cedar Key Oystermens Association.
-
 B.	Performance of Task 6 as against the Task 6 Budget. 
 
-This task appears to be within the budget proposed and on schedule.  
+This task is within the budget proposed and on schedule.  
 
 C.	Existing or anticipated problems with implementation of Task 6. 
 
@@ -151,7 +146,7 @@ We do not anticipate any problems with the implementation of Task 6.
 
  A.	Work performed on Task 7.
 
-With the help of the UF library team we corrected unexpected errors in the geospatial information collected in 2021-2022.  
+Transitioning geospatial data to long-term repository.
 
 B.	 Progress made towards Task 7 milestones.
 
@@ -172,15 +167,14 @@ None anticipated.
  A.	Work performed on Task 8. 
 
 ***Subtask 8.1. Tracking expenditures***  
-The project is underspent. We have worked to close out financials related to the project.
+The project is underspent. We have worked to close out the financials related to the project.
 
 
 ***Subtask 8.2. Managing staff***
-Two graduate students (Nate Rogers and Matthew Richardson) are supported in whole or part by this award. Jennifer Moore (former post-doc) in now a contractor and was able to commit some hours in June and July to the project. Nate Rogers has been on medical leave most of the semester. Joe Aufmuth (UF library) worked extensively on the geospatial information and related report components. Staff continue to be supervised by PI Bill Pine, who is working on all aspects of the project but has reduced UF appointment.  
-
+Two graduate students (Nate Rogers and Matthew Richardson) are supported in whole or part by this award. Jennifer Moore (former post-doc) in now a contractor and was able to commit some hours to the project this reporting period. Nate Rogers was on medical leave during the semester. Matt Richardson is on track to graduate in May. Joe Aufmuth (UF library) worked extensively on the geospatial information and related report components. Staff continue to be supervised by PI Bill Pine. Bill Pine is working on all aspects of the project.   
 
 ***Subtask 8.3. Coordination***
-Coordinating meetings take place related to project completion as needed. PI Bill Pine meets with staff regularly via video conference, phone calls, and in-person.
+Coordinating meetings related to project completion take place as needed. PI Bill Pine meets with staff regularly via video conference, phone calls, and in-person.
 
 ***Subtask 8.4. Reporting***
 During this period, we have submitted requests for reimbursement for the October 2023 reporting period and have completed the quarterly report for the October 2023 reporting period. PI Pine is working on the project final report based on input from NFWF.
@@ -188,7 +182,7 @@ During this period, we have submitted requests for reimbursement for the October
 B.	Progress made towards Task 8 milestones.
 
 .	Fiscal reports and requests for reimbursement completed.  
-.	Quarterly report completed through October 2023.  
+.	Quarterly report completed through December 2023.  
 .	Management and training graduate students.  
 . Working on project final report.  
 
@@ -206,11 +200,10 @@ UF has submitted payment requests quarterly and UF plans to continue this schedu
 
 ##  Any other information necessary for NFWF's evaluation of the Project's progress as measured against the Project Description, Budget, and Project schedule.
 
-Project PI Bill Pine plans to separate from University of Florida employment. A solution was found for this separation.
-
+Project PI Bill Pine has reduced his appointment at the University of Florida to 0.2 appointment.  
 
 ##	Project products and deliverables produced during the applicable reporting period.  
 
-See the Appendix for draft manuscript on oyster heights.
+See the appendix for draft documents on water quality and oyster counts that will inform final report.  
 
 \newpage
